@@ -1,0 +1,13 @@
+GLOBAL 3 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.glo
+LIST 2 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.lst
+BAS6 1 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.bas
+LPF 11 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.lpf
+DIS 29 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.dis
+ZONE 40 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.zone
+WEL 12 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.wel
+RCH 18 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.rch
+OC 22 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.oc
+PCG 19 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.pcg
+DATA(BINARY) 50 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.cbb
+DATA(BINARY) 30 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.hds
+DATA(BINARY) 31 N:\My Drive\0 Hydrogeologic Modeling 2024\2 Labs 2022\Lab 6-AWH Modflow Problem Chp 4, 7\GWV6\7-2b.ddn

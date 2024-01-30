@@ -1,0 +1,13 @@
+GLOBAL 6 7-2b.glo
+LIST 7 7-2b.lst
+BAS6  1 7-2b.bas
+DIS  29 7-2b.dis
+LPF 11 7-2b.lpf
+ZONE 40 7-2b.zone
+WEL 12 7-2b.wel
+RCH 18 7-2b.rch
+OC  22 7-2b.oc
+PCG 19 7-2b.pcg
+DATA(BINARY) 50 7-2b.cbb
+DATA(BINARY) 30 7-2b.hds
+DATA(BINARY) 31 7-2b.ddn

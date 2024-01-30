@@ -1,0 +1,15 @@
+BEGIN Options
+  LIST       mumodel.lst
+END Options
+
+BEGIN Packages
+  DIS6       mumodel.dis
+  IC6        mumodel.ic
+  NPF6       mumodel.npf
+  STO6       mumodel.sto
+  OC6        mumodel.oc
+  WEL6       mumodel.wel
+  RCH6       mumodel.rch
+  CHD6       mumodel.ib.ibound.chd  'CHD-FROM-IBOUND' 
+END Packages
+

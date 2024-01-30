@@ -1,0 +1,249 @@
+                                  MODFLOW-2000
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                           VERSION 1.19.01 03/25/2010
+
+
+ This model run produced both GLOBAL and LIST files.  This is the GLOBAL file.
+
+ GLOBAL LISTING FILE: N:\My
+                         UNIT     3
+
+ OPENING N:\My
+ FILE TYPE:LIST   UNIT      2   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:BAS6   UNIT      1   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:LPF   UNIT     11   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:DIS   UNIT     29   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:ZONE   UNIT     40   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:WEL   UNIT     12   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:RCH   UNIT     18   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:OC   UNIT     22   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:PCG   UNIT     19   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:DATA(BINARY)   UNIT     50   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:DATA(BINARY)   UNIT     30   STATUS:
+
+ OPENING N:\My
+ FILE TYPE:DATA(BINARY)   UNIT     31   STATUS:
+
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT     29
+ # MODFLOW2000 Discretization File
+    1 LAYERS        21 ROWS         9 COLUMNS
+    25 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS UNDEFINED
+ THE GROUND-WATER TRANSPORT PROCESS IS INACTIVE
+
+ THE OBSERVATION PROCESS IS INACTIVE
+ THE SENSITIVITY PROCESS IS INACTIVE
+ THE PARAMETER-ESTIMATION PROCESS IS INACTIVE
+
+ MODE: FORWARD
+
+
+ ZONE OPTION, INPUT READ FROM UNIT     40
+ # MODFLOW2000 Zone File
+ # Groundwater Vistas writes all zones regardless of whether
+ # they are being used.  These zones include:
+ #     kxzone##, kzzone##, szone##, rzone, and etzone, where
+ #     ## is the layer number
+    27 ZONE ARRAYS
+  Confining bed flag for each layer:
+   0
+
+       1731  ELEMENTS OF GX ARRAY USED OUT OF       1731
+        189  ELEMENTS OF GZ ARRAY USED OUT OF        189
+       5292  ELEMENTS OF IG ARRAY USED OUT OF       5292
+
+                     DELR =   500.000    
+
+                     DELC =   500.000    
+
+ TOP ELEVATION OF LAYER 1 =   1100.00    
+
+   MODEL LAYER BOTTOM EL. =   980.000     FOR LAYER     1
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.200         SS
+        2         31.00000          8                    1.200         TR
+        3         28.00000          8                    1.200         TR
+        4         31.00000          8                    1.200         TR
+        5         30.00000          8                    1.200         TR
+        6         31.00000          8                    1.200         TR
+        7         30.00000          8                    1.200         TR
+        8         31.00000          8                    1.200         TR
+        9         31.00000          8                    1.200         TR
+       10         30.00000          8                    1.200         TR
+       11         31.00000          8                    1.200         TR
+       12         30.00000          8                    1.200         TR
+       13         31.00000          8                    1.200         TR
+       14         31.00000          8                    1.200         TR
+       15         28.00000          8                    1.200         TR
+       16         31.00000          8                    1.200         TR
+       17         30.00000          8                    1.200         TR
+       18         31.00000          8                    1.200         TR
+       19         30.00000          8                    1.200         TR
+       20         31.00000          8                    1.200         TR
+       21         31.00000          8                    1.200         TR
+       22         30.00000          8                    1.200         TR
+       23         31.00000          8                    1.200         TR
+       24         30.00000          8                    1.200         TR
+       25         31.00000          8                    1.200         TR
+
+ COMBINED STEADY-STATE AND TRANSIENT SIMULATION
+
+
+
+
+   ZONE ARRAY: kxzone1    =              1
+
+   ZONE ARRAY: szone1     =              1
+
+   ZONE ARRAY: rzone1     =              1
+
+   ZONE ARRAY: rzone2     =              1
+
+   ZONE ARRAY: rzone3     =              1
+
+   ZONE ARRAY: rzone4     =              1
+
+   ZONE ARRAY: rzone5     =              1
+
+   ZONE ARRAY: rzone6     =              1
+
+   ZONE ARRAY: rzone7     =              1
+
+   ZONE ARRAY: rzone8     =              1
+
+   ZONE ARRAY: rzone9     =              1
+
+   ZONE ARRAY: rzone10    =              1
+
+   ZONE ARRAY: rzone11    =              1
+
+   ZONE ARRAY: rzone12    =              1
+
+   ZONE ARRAY: rzone13    =              1
+
+   ZONE ARRAY: rzone14    =              1
+
+   ZONE ARRAY: rzone15    =              1
+
+   ZONE ARRAY: rzone16    =              1
+
+   ZONE ARRAY: rzone17    =              1
+
+   ZONE ARRAY: rzone18    =              1
+
+   ZONE ARRAY: rzone19    =              1
+
+   ZONE ARRAY: rzone20    =              1
+
+   ZONE ARRAY: rzone21    =              1
+
+   ZONE ARRAY: rzone22    =              1
+
+   ZONE ARRAY: rzone23    =              1
+
+   ZONE ARRAY: rzone24    =              1
+
+   ZONE ARRAY: rzone25    =              1
+
+ LPF1 -- LAYER PROPERTY FLOW PACKAGE, VERSION 1, 1/11/2000
+         INPUT READ FROM UNIT   11
+ # MODFLOW2000 Layer Property Flow (LPF) Package
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+ HEAD AT CELLS THAT CONVERT TO DRY= -1.00000E+30
+ No named parameters
+
+   LAYER FLAGS:
+ LAYER       LAYTYP        LAYAVG         CHANI        LAYVKA        LAYWET
+ ---------------------------------------------------------------------------
+    1             1             0     1.000E+00             0             0
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER      (LAYTYP)      (LAYAVG)       (CHANI)      (LAYVKA)      (LAYWET)
+ ---------------------------------------------------------------------------
+    1   CONVERTIBLE      HARMONIC     1.000E+00    VERTICAL K  NON-WETTABLE
+
+        756 ELEMENTS IN X ARRAY ARE USED BY LPF
+          6 ELEMENTS IN IX ARRAY ARE USED BY LPF
+
+ PCG2 -- CONJUGATE GRADIENT SOLUTION PACKAGE, VERSION 2.4, 12/29/98
+ MAXIMUM OF    100 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     25 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ MATRIX PRECONDITIONING TYPE :    1
+       5378 ELEMENTS IN X ARRAY ARE USED BY PCG
+      17500 ELEMENTS IN IX ARRAY ARE USED BY PCG
+        756 ELEMENTS IN Z ARRAY ARE USED BY PCG
+
+       6134  ELEMENTS OF X ARRAY USED OUT OF       6134
+        756  ELEMENTS OF Z ARRAY USED OUT OF        756
+      17506  ELEMENTS OF IX ARRAY USED OUT OF      17506
+          0  ELEMENTS OF XHS ARRAY USED OUT OF          1
+
+
+
+                                    SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+                                   -------------------------------------------
+                    MAXIMUM NUMBER OF CALLS TO PCG ROUTINE =      100
+                        MAXIMUM ITERATIONS PER CALL TO PCG =       25
+                               MATRIX PRECONDITIONING TYPE =        1
+        RELAXATION FACTOR (ONLY USED WITH PRECOND. TYPE 1) =    0.10000E+01
+ PARAMETER OF POLYNOMIAL PRECOND. = 2 (2) OR IS CALCULATED :        2
+                         HEAD CHANGE CRITERION FOR CLOSURE =    0.10000E-02
+                     RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+01
+            PCG HEAD AND RESIDUAL CHANGE PRINTOUT INTERVAL =        5
+     PRINTING FROM SOLVER IS LIMITED(1) OR SUPPRESSED (>1) =        0
+                                         DAMPING PARAMETER =    0.10000E+01
+
+ WETTING CAPABILITY IS NOT ACTIVE IN ANY LAYER
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER     1
+ READING ON UNIT    11 WITH FORMAT: (10e12.4)           
+
+
+
+                VERTICAL HYD. COND. FOR LAYER     1
+ READING ON UNIT    11 WITH FORMAT: (10e12.4)           
+
+
+
+                   SPECIFIC STORAGE FOR LAYER     1
+ READING ON UNIT    11 WITH FORMAT: (10e12.4)           
+
+
+
+                     SPECIFIC YIELD FOR LAYER     1
+ READING ON UNIT    11 WITH FORMAT: (10e12.4)           
+
+
+     0 Well parameters
+
+
+     0 Recharge parameters

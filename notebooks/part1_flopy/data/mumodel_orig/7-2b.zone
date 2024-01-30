@@ -1,0 +1,60 @@
+# MODFLOW2000 Zone File
+# Groundwater Vistas writes all zones regardless of whether
+# they are being used.  These zones include:
+#     kxzone##, kzzone##, szone##, rzone, and etzone, where
+#     ## is the layer number
+  27
+kxzone1
+         0         1(50I3)                      -1     K Zones for Layer 1
+szone1
+         0         1(50I3)                      -1     S Zones for Layer 1
+rzone1
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 1
+rzone2
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 2
+rzone3
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 3
+rzone4
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 4
+rzone5
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 5
+rzone6
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 6
+rzone7
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 7
+rzone8
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 8
+rzone9
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 9
+rzone10
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 10
+rzone11
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 11
+rzone12
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 12
+rzone13
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 13
+rzone14
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 14
+rzone15
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 15
+rzone16
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 16
+rzone17
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 17
+rzone18
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 18
+rzone19
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 19
+rzone20
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 20
+rzone21
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 21
+rzone22
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 22
+rzone23
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 23
+rzone24
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 24
+rzone25
+         0         1(50I3)                      -1     Recharge Zones for Stress Period 25

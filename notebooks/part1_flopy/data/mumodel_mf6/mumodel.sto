@@ -1,0 +1,21 @@
+# STO6 input file, prepared by MF5to6 on 1/30/2024 at 15:47:34.
+
+BEGIN Options
+END Options
+
+BEGIN GRIDDATA
+  ICONVERT LAYERED
+    CONSTANT  1
+  SS LAYERED
+    CONSTANT   0.10000000    
+  SY LAYERED
+    CONSTANT   0.10000000    
+END GRIDDATA
+
+BEGIN Period 1
+    STEADY-STATE
+END Period
+
+BEGIN Period 2
+    TRANSIENT
+END Period
