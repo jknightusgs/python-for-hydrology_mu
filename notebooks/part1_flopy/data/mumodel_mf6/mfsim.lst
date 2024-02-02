@@ -61,7 +61,7 @@ MODFLOW 6 compiler options: /Isrc\libmf6core.a.p /Isrc /I..\src
 /Fosrc/libmf6core.a.p/Utilities_compilerversion.F90.obj /c
 
 System command used to initiate simulation:
-mf6
+C:\models\python-for-hydrology_mu\notebooks\part1_flopy\data\mumodel_mf6\mf6.exe
 
 MODFLOW was compiled using uniform precision.
 
@@ -227,18 +227,17 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1         12      -98.470507                              1_GWF-(1,2,9)
- Model                              2         13       9.0956297                             1_GWF-(1,11,8)
- Model                              3         11      -1.8103118                             1_GWF-(1,11,1)
- Model                              4          9      0.20634262                             1_GWF-(1,11,9)
- Model                              5          7 -1.98271650E-02                             1_GWF-(1,11,8)
- Model                              6          4  1.64535469E-03                             1_GWF-(1,11,9)
- Model                              7          1 -8.92869427E-05       *                     1_GWF-(1,13,9)
+ Model                              1         11      -99.307305                             1_GWF-(1,20,8)
+ Model                              2         12       4.4271074                             1_GWF-(1,11,4)
+ Model                              3         10     -0.49940201                             1_GWF-(1,11,1)
+ Model                              4          8  3.44746328E-02                             1_GWF-(1,11,1)
+ Model                              5          5 -1.93618198E-03                             1_GWF-(1,11,1)
+ Model                              6          1  6.48808312E-05       *                     1_GWF-(1,10,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 7 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
- 57 TOTAL ITERATIONS
+ 6 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 47 TOTAL ITERATIONS
  
     Solving:  Stress period:     2    Time step:     1
  
@@ -254,12 +253,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          1 -8.30456248E-05       *                     1_GWF-(1,20,8)
+ Model                              1          2  4.22579459E-04       *                     1_GWF-(1,20,8)
  ----------------------------------------------------------------------------------------------------------
 
 
  1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 2
- 1 TOTAL ITERATIONS
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     2    Time step:     2
  
@@ -269,12 +268,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          1 -9.92320943E-05       *                     1_GWF-(1,20,8)
+ Model                              1          2  5.04930225E-04       *                     1_GWF-(1,20,8)
  ----------------------------------------------------------------------------------------------------------
 
 
  1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 2
- 1 TOTAL ITERATIONS
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     2    Time step:     3
  
@@ -284,7 +283,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.18475850E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  6.02830186E-04       *                     1_GWF-(1,20,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -299,7 +298,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.41313932E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  7.19006204E-04       *                     1_GWF-(1,20,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -314,7 +313,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.68360344E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  8.56577340E-04       *                     1_GWF-(1,20,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -329,12 +328,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.00310980E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  1.01907619E-03                             1_GWF-(1,20,8)
+ Model                              2          1  1.58225248E-07       *                      1_GWF-(1,2,2)
  ----------------------------------------------------------------------------------------------------------
 
 
- 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 6 STRESS PERIOD 2
- 2 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 6 STRESS PERIOD 2
+ 3 TOTAL ITERATIONS
  
     Solving:  Stress period:     2    Time step:     7
  
@@ -344,12 +344,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.37945070E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  1.21097193E-03                              1_GWF-(1,3,2)
+ Model                              2          1  2.27268742E-07       *                      1_GWF-(1,2,2)
  ----------------------------------------------------------------------------------------------------------
 
 
- 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 2
- 2 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 2
+ 3 TOTAL ITERATIONS
  
     Solving:  Stress period:     2    Time step:     8
  
@@ -359,12 +360,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.82122631E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  1.45213058E-03                              1_GWF-(1,3,2)
+ Model                              2          1  3.26234272E-07       *                      1_GWF-(1,2,2)
  ----------------------------------------------------------------------------------------------------------
 
 
- 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 8 STRESS PERIOD 2
- 2 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 8 STRESS PERIOD 2
+ 3 TOTAL ITERATIONS
  
     Solving:  Stress period:     3    Time step:     1
  
@@ -380,8 +382,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  1.37021167E-03                             1_GWF-(1,20,1)
- Model                              2          1  1.24324856E-07       *                     1_GWF-(1,20,9)
+ Model                              1          2  1.88720554E-03                             1_GWF-(1,20,8)
+ Model                              2          1 -1.20350251E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -396,8 +398,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  1.63784424E-03                             1_GWF-(1,20,1)
- Model                              2          1  1.78904202E-07       *                     1_GWF-(1,20,9)
+ Model                              1          2  2.25584531E-03                             1_GWF-(1,20,8)
+ Model                              2          1 -1.72323666E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -412,8 +414,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  1.95626781E-03                             1_GWF-(1,20,1)
- Model                              2          1  2.57404736E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  2.69445698E-03                             1_GWF-(1,20,8)
+ Model                              2          1 -2.46468744E-07       *                     1_GWF-(1,19,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -428,8 +430,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  2.33449669E-03                             1_GWF-(1,20,1)
- Model                              2          1  3.70278940E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  3.21546434E-03                             1_GWF-(1,20,8)
+ Model                              2          1 -3.52053121E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -444,8 +446,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  2.78288611E-03                             1_GWF-(1,20,1)
- Model                              2          1  5.32517220E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  3.83314172E-03                             1_GWF-(1,20,8)
+ Model                              2          1 -5.02083253E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -460,8 +462,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  3.31322515E-03                             1_GWF-(1,20,1)
- Model                              2          1  7.65599111E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  4.56374355E-03                             1_GWF-(1,20,8)
+ Model                              2          1 -7.14726752E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -476,8 +478,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  3.93878942E-03                             1_GWF-(1,20,1)
- Model                              2          1  1.10025860E-06       *                     1_GWF-(1,20,1)
+ Model                              1          2  5.46054375E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.01520789E-06       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -492,8 +494,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  4.67433071E-03                             1_GWF-(1,20,1)
- Model                              2          1  1.58039632E-06       *                     1_GWF-(1,20,1)
+ Model                              1          2  6.54691595E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.43830323E-06       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -514,8 +516,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  2.23626111E-03                             1_GWF-(1,20,1)
- Model                              2          1 -2.33407150E-07       *                     1_GWF-(1,19,2)
+ Model                              1          2  2.83256394E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -2.47343678E-07       *                     1_GWF-(1,19,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -530,8 +532,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  2.67224803E-03                             1_GWF-(1,20,1)
- Model                              2          1 -3.33418711E-07       *                     1_GWF-(1,19,2)
+ Model                              1          2  3.39799615E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -3.54369035E-07       *                     1_GWF-(1,19,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -546,8 +548,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  3.19063806E-03                             1_GWF-(1,20,1)
- Model                              2          1 -4.75534421E-07       *                     1_GWF-(1,19,2)
+ Model                              1          2  4.07595316E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -5.07205414E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -562,8 +564,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  3.80591638E-03                             1_GWF-(1,20,1)
- Model                              2          1 -6.76950435E-07       *                     1_GWF-(1,19,2)
+ Model                              1          2  4.88863385E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -7.25112159E-07       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -578,8 +580,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  4.53466587E-03                             1_GWF-(1,20,1)
- Model                              2          1 -9.61525075E-07       *                     1_GWF-(1,19,2)
+ Model                              1          2  5.86250329E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.03520472E-06       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -594,8 +596,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  5.39568770E-03                             1_GWF-(1,20,1)
- Model                              2          1 -1.36209894E-06       *                     1_GWF-(1,19,2)
+ Model                              1          2  7.02904505E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.47549758E-06       *                     1_GWF-(1,19,8)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -610,8 +612,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  6.41004865E-03                             1_GWF-(1,20,1)
- Model                              2          1 -1.92347170E-06       *                     1_GWF-(1,19,2)
+ Model                              1          2  8.42560567E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -2.09902009E-06       *                     1_GWF-(1,19,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -626,8 +628,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  7.60744457E-03                             1_GWF-(1,19,9)
- Model                              2          1 -2.70606813E-06       *                     1_GWF-(1,19,2)
+ Model                              1          2  1.00963173E-02                              1_GWF-(1,3,2)
+ Model                              2          1 -2.97931138E-06       *                     1_GWF-(1,19,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -648,8 +650,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  1.34099978E-03                             1_GWF-(1,19,9)
- Model                              2          1  1.47240939E-07       *                     1_GWF-(1,20,9)
+ Model                              1          2  1.94159927E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.18587650E-07       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -664,8 +666,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  1.60833222E-03                             1_GWF-(1,19,9)
- Model                              2          1  2.11720931E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  2.32855831E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.70610974E-07       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -680,8 +682,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  1.92872511E-03                             1_GWF-(1,19,9)
- Model                              2          1  3.04347509E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  2.79227615E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -2.45407477E-07       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -696,8 +698,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  2.31259534E-03                             1_GWF-(1,19,9)
- Model                              2          1  4.37339281E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  3.34780270E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -3.52906909E-07       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -712,8 +714,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  2.77234630E-03                             1_GWF-(1,19,9)
- Model                              2          1  6.28171051E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  4.01304971E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -5.07338314E-07       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -728,8 +730,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  3.32271585E-03                             1_GWF-(1,19,9)
- Model                              2          1  9.01790600E-07       *                     1_GWF-(1,20,1)
+ Model                              1          2  4.80928840E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -7.29065050E-07       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -744,8 +746,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  3.98116816E-03                             1_GWF-(1,19,9)
- Model                              2          1  1.29375599E-06       *                     1_GWF-(1,20,1)
+ Model                              1          2  5.76170848E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.04718856E-06       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -760,8 +762,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2  4.76832539E-03                             1_GWF-(1,19,9)
- Model                              2          1  1.85462761E-06       *                     1_GWF-(1,20,1)
+ Model                              1          2  6.90003145E-03                              1_GWF-(1,3,2)
+ Model                              2          1 -1.50320807E-06       *                     1_GWF-(1,18,7)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -782,7 +784,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.32184714E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  3.88027445E-04       *                      1_GWF-(1,4,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -797,7 +799,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.95779395E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  4.65482339E-04       *                      1_GWF-(1,4,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -812,7 +814,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.70891477E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  5.58353799E-04       *                      1_GWF-(1,4,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -827,7 +829,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.59330083E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  6.69686929E-04       *                      1_GWF-(1,4,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -842,7 +844,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.63072198E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  8.03115521E-04       *                      1_GWF-(1,4,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -857,7 +859,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.84226587E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  9.62968753E-04       *                      1_GWF-(1,4,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -872,12 +874,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.24969838E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2  1.15439326E-03                              1_GWF-(1,4,2)
+ Model                              2          1  2.43371119E-07       *                      1_GWF-(1,2,2)
  ----------------------------------------------------------------------------------------------------------
 
 
- 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 6
- 2 TOTAL ITERATIONS
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 6
+ 3 TOTAL ITERATIONS
  
     Solving:  Stress period:     6    Time step:     8
  
@@ -887,8 +890,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.08744576E-03                             1_GWF-(1,20,8)
- Model                              2          1  5.09706524E-07       *                     1_GWF-(1,19,8)
+ Model                              1          2  1.38349305E-03                              1_GWF-(1,4,2)
+ Model                              2          1  3.46013053E-07       *                      1_GWF-(1,2,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -909,7 +912,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.76803618E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2 -3.33202468E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -924,7 +927,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.07967342E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2 -3.96792295E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -939,7 +942,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.63581440E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2 -4.71809328E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -954,13 +957,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.14779687E-03                             1_GWF-(1,20,8)
- Model                              2          1 -2.09104201E-07       *                     1_GWF-(1,20,8)
+ Model                              1          2 -5.60007173E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 7
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 7
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     7    Time step:     5
  
@@ -970,13 +972,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.36529644E-03                             1_GWF-(1,20,8)
- Model                              2          1 -3.00500687E-07       *                     1_GWF-(1,20,8)
+ Model                              1          2 -6.63280967E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 5 STRESS PERIOD 7
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 5 STRESS PERIOD 7
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     7    Time step:     6
  
@@ -986,13 +987,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.62130245E-03                             1_GWF-(1,20,8)
- Model                              2          1 -4.31636749E-07       *                      1_GWF-(1,2,2)
+ Model                              1          2 -7.83620222E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 6 STRESS PERIOD 7
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 6 STRESS PERIOD 7
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     7    Time step:     7
  
@@ -1002,13 +1002,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.92153288E-03                             1_GWF-(1,20,8)
- Model                              2          1 -6.19623393E-07       *                      1_GWF-(1,2,2)
+ Model                              1          2 -9.23029645E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 7
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 7
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     7    Time step:     8
  
@@ -1018,8 +1017,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.27211826E-03                             1_GWF-(1,20,8)
- Model                              2          1 -8.88798922E-07       *                      1_GWF-(1,2,2)
+ Model                              1          2 -1.08340786E-03                             1_GWF-(1,20,1)
+ Model                              2          1  3.08142376E-07       *                     1_GWF-(1,19,2)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1040,13 +1039,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.01056214E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.34815309E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -6.88878009E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 8
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 8
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     8    Time step:     2
  
@@ -1056,13 +1054,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.20691330E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.93778305E-07       *                     1_GWF-(1,20,8)
+ Model                              1          2 -8.21896110E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 8
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 8
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     8    Time step:     3
  
@@ -1072,13 +1069,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.44008655E-03                             1_GWF-(1,20,8)
- Model                              2          1 -2.78423840E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -9.79500994E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 8
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 8
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     8    Time step:     4
  
@@ -1088,8 +1084,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.71643002E-03                             1_GWF-(1,20,8)
- Model                              2          1 -3.99858777E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.16577619E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.07019218E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1104,8 +1100,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.04315626E-03                             1_GWF-(1,20,8)
- Model                              2          1 -5.73934472E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.38528962E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.53976089E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1120,8 +1116,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.42836501E-03                             1_GWF-(1,20,8)
- Model                              2          1 -8.23227879E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.64307519E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -2.21467872E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1136,8 +1132,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.88102251E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.17981619E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.94456340E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -3.18408865E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1152,8 +1148,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.41087856E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.68913607E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -2.29545962E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -4.57520741E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1174,7 +1170,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.48739692E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2 -6.37804085E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1189,13 +1185,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.13336929E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.93286837E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -7.61171603E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 9
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 9
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     9    Time step:     3
  
@@ -1205,13 +1200,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.35274575E-03                             1_GWF-(1,20,8)
- Model                              2          1 -2.77651338E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -9.07433394E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 9
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 9
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:     9    Time step:     4
  
@@ -1221,8 +1215,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.61291444E-03                             1_GWF-(1,20,8)
- Model                              2          1 -3.98638349E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.08043159E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.08880954E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1237,8 +1231,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.92076632E-03                             1_GWF-(1,20,8)
- Model                              2          1 -5.71995997E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.28448216E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.56516307E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1253,8 +1247,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.28407361E-03                             1_GWF-(1,20,8)
- Model                              2          1 -8.20137871E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.52436740E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -2.24890869E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1269,8 +1263,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.71148760E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.17487491E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.80528364E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -3.22949177E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1285,8 +1279,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.21248262E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.68122131E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -2.13274384E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -4.63418132E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1307,7 +1301,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.65025406E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2 -5.73693411E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1322,13 +1316,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.03375487E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.80070288E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -6.84958282E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 10
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 10
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    10    Time step:     3
  
@@ -1338,13 +1331,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.23440619E-03                             1_GWF-(1,20,8)
- Model                              2          1 -2.58640853E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -8.16999168E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 10
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 10
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    10    Time step:     4
  
@@ -1354,13 +1346,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.47260453E-03                             1_GWF-(1,20,8)
- Model                              2          1 -3.71301098E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -9.73357596E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 10
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 10
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    10    Time step:     5
  
@@ -1370,8 +1361,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.75479292E-03                             1_GWF-(1,20,8)
- Model                              2          1 -5.32702302E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.15803835E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.48008667E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1386,8 +1377,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.08828188E-03                             1_GWF-(1,20,8)
- Model                              2          1 -7.63686444E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.37550777E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -2.12519467E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1402,8 +1393,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.48126959E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.09383222E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.63067356E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -3.04943569E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1418,8 +1409,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.94281880E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.56498459E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.92881038E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -4.37194899E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1440,7 +1431,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.46175469E-04       *                     1_GWF-(1,20,8)
+ Model                              1          2 -5.54040001E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1455,13 +1446,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.01131485E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.90722176E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -6.61547817E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 11
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 11
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    11    Time step:     3
  
@@ -1471,13 +1461,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.20773490E-03                             1_GWF-(1,20,8)
- Model                              2          1 -2.73878982E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -7.89154443E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 11
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 11
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    11    Time step:     4
  
@@ -1487,13 +1476,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.44096485E-03                             1_GWF-(1,20,8)
- Model                              2          1 -3.93072582E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -9.40297057E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 11
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 11
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    11    Time step:     5
  
@@ -1503,8 +1491,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.71734564E-03                             1_GWF-(1,20,8)
- Model                              2          1 -5.63760977E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.11886781E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.58500029E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1519,8 +1507,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.04408332E-03                             1_GWF-(1,20,8)
- Model                              2          1 -8.07915740E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.32921499E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -2.27424380E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1535,8 +1523,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.42927539E-03                             1_GWF-(1,20,8)
- Model                              2          1 -1.15668320E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.57612872E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -3.26062036E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1551,8 +1539,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.89752529E-03                             1_GWF-(1,19,7)
- Model                              2          1 -1.65407278E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.86477438E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -4.67024734E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1573,7 +1561,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.82214464E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -5.01823761E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1588,7 +1576,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.38240824E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -5.99438011E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1603,13 +1591,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.12527312E-03                             1_GWF-(1,19,7)
- Model                              2          1 -2.54043584E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -7.15403678E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 12
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 12
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    12    Time step:     4
  
@@ -1619,13 +1606,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.34941564E-03                             1_GWF-(1,19,7)
- Model                              2          1 -3.64598804E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -8.52902892E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 12
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 12
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    12    Time step:     5
  
@@ -1635,8 +1621,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.61794047E-03                             1_GWF-(1,19,7)
- Model                              2          1 -5.22914661E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.01555827E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -1.48397021E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1651,8 +1637,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.93949793E-03                             1_GWF-(1,19,7)
- Model                              2          1 -7.49369974E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.20744440E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -2.12852456E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1667,8 +1653,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.32435008E-03                             1_GWF-(1,19,7)
- Model                              2          1 -1.07285757E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.43308791E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -3.05048502E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1683,8 +1669,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.78463007E-03                             1_GWF-(1,19,7)
- Model                              2          1 -1.53420945E-06       *                     1_GWF-(1,20,7)
+ Model                              1          2 -1.69742404E-03                             1_GWF-(1,20,1)
+ Model                              2          1 -4.36732876E-07       *                      1_GWF-(1,2,9)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1705,7 +1691,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.70774087E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -1.08553397E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1720,7 +1706,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.64355641E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -1.29556703E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1735,7 +1721,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.76399713E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -1.54458755E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1750,7 +1736,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.10486164E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -1.83913037E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1765,7 +1751,7 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.70860711E-04       *                     1_GWF-(1,19,7)
+ Model                              1          2 -2.18652740E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1780,13 +1766,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.16254581E-03                             1_GWF-(1,19,7)
- Model                              2          1 -4.39850396E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -2.59487373E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 6 STRESS PERIOD 13
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 6 STRESS PERIOD 13
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    13    Time step:     7
  
@@ -1796,13 +1781,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.39146827E-03                             1_GWF-(1,19,7)
- Model                              2          1 -6.29187866E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -3.07292210E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 13
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 7 STRESS PERIOD 13
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    13    Time step:     8
  
@@ -1812,13 +1796,12 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.66458351E-03                             1_GWF-(1,19,7)
- Model                              2          1 -8.98866347E-07       *                     1_GWF-(1,20,7)
+ Model                              1          2 -3.62987565E-04       *                     1_GWF-(1,20,1)
  ----------------------------------------------------------------------------------------------------------
 
 
- 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 8 STRESS PERIOD 13
- 3 TOTAL ITERATIONS
+ 1 CALLS TO NUMERICAL SOLUTION IN TIME STEP 8 STRESS PERIOD 13
+ 2 TOTAL ITERATIONS
  
     Solving:  Stress period:    14    Time step:     1
  
@@ -1834,8 +1817,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.21414398E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.73745038E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.94893101E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.13042565E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1850,13 +1833,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.16221592E-02                              1_GWF-(1,5,5)
- Model                              2          1 -6.73069834E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.03427137E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.01494047E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 2 STRESS PERIOD 14
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    14    Time step:     3
  
@@ -1866,13 +1849,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.26125004E-02                              1_GWF-(1,5,5)
- Model                              2          1 -9.53914373E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -8.29393914E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.44163618E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 14
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    14    Time step:     4
  
@@ -1882,8 +1865,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.52649395E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.34808253E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -9.74618227E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.04273719E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1898,8 +1881,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.97101861E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.89881047E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.11407027                              1_GWF-(1,5,5)
+ Model                              2          2 -2.88630640E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1914,8 +1897,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2     -0.11603819                              1_GWF-(1,5,5)
- Model                              2          2 -2.66427285E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.13288145                              1_GWF-(1,5,5)
+ Model                              2          2 -4.06493466E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1930,8 +1913,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2     -0.13427359                              1_GWF-(1,5,5)
- Model                              2          2 -3.72179165E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.15394075                              1_GWF-(1,5,5)
+ Model                              2          2 -5.70330193E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1946,8 +1929,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2     -0.15434601                              1_GWF-(1,5,5)
- Model                              2          2 -5.17263664E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.17718792                              1_GWF-(1,5,5)
+ Model                              2          2 -7.96722703E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1968,8 +1951,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.74393936E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.21791215E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.30524947E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.97396892E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -1984,8 +1967,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.43157169E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.57974359E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.09787588E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.08949684E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2000,13 +1983,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.23157322E-02                              1_GWF-(1,5,5)
- Model                              2          1 -6.50334364E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.02080858E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.00850005E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 15
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    15    Time step:     4
  
@@ -2016,13 +1999,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.15654394E-02                              1_GWF-(1,5,5)
- Model                              2          1 -9.21052250E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.08898421E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.43129118E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 15
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    15    Time step:     5
  
@@ -2032,8 +2015,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.21804963E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.30040127E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -8.31628931E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.02575604E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2048,8 +2031,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.42534821E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.82926555E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -9.71411643E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.85783139E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2064,8 +2047,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -9.78368014E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.56214136E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.11289406                              1_GWF-(1,5,5)
+ Model                              2          2 -4.01625415E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2080,8 +2063,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2     -0.11292100                              1_GWF-(1,5,5)
- Model                              2          2 -3.57052617E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.13042134                              1_GWF-(1,5,5)
+ Model                              2          2 -5.61875001E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2102,8 +2085,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.39085213E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.39192105E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.92211940E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -5.35558291E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2118,8 +2101,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.00877859E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.82189856E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.63834875E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.62390904E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2134,13 +2117,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.72565121E-02                              1_GWF-(1,5,5)
- Model                              2          1 -6.83767146E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.46986148E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.08286145E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 16
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    16    Time step:     4
  
@@ -2150,13 +2133,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.55168487E-02                              1_GWF-(1,5,5)
- Model                              2          1 -9.66747984E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.42879975E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.53393155E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 16
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    16    Time step:     5
  
@@ -2166,8 +2149,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.49575405E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.36205021E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.52584456E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.16597947E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2182,8 +2165,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.56414978E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.91103523E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -8.76878083E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.04686936E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2198,8 +2181,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.75894945E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.66814653E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.10160597                              1_GWF-(1,5,5)
+ Model                              2          2 -4.26668434E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2214,8 +2197,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2     -0.10076000                              1_GWF-(1,5,5)
- Model                              2          2 -3.70365115E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2     -0.11697109                              1_GWF-(1,5,5)
+ Model                              2          2 -5.94279749E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2236,8 +2219,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.76976675E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.94393641E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.22207248E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.74355501E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2252,8 +2235,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.27929233E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.19067781E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.81574055E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -6.75981394E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2268,8 +2251,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.87247472E-02                              1_GWF-(1,5,5)
- Model                              2          1 -5.95201641E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.50725216E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -9.61332071E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2284,13 +2267,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.55890021E-02                              1_GWF-(1,5,5)
- Model                              2          1 -8.43107565E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.30796478E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.36378592E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 17
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    17    Time step:     5
  
@@ -2300,8 +2283,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.34751002E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.19047829E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.22854128E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.92907479E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2316,8 +2299,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.24570692E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.67465511E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.27791172E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.71917774E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2332,8 +2315,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.25815468E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.34527340E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -8.46186611E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.81700735E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2348,8 +2331,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -8.38525450E-02                              1_GWF-(1,5,5)
- Model                              2          2 -3.26719750E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -9.78124996E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -5.33167739E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2370,8 +2353,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.54474527E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.11969696E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.97570802E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -5.11173075E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2386,8 +2369,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.01607188E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.44555569E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.52761541E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.29117431E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2402,13 +2385,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.56621310E-02                              1_GWF-(1,5,5)
- Model                              2          1 -6.32202255E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.17211203E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.03804478E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 3 STRESS PERIOD 18
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    18    Time step:     4
  
@@ -2418,13 +2401,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.20488299E-02                              1_GWF-(1,5,5)
- Model                              2          1 -8.96884721E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.92072492E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.47458504E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 18
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    18    Time step:     5
  
@@ -2434,8 +2417,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.94156908E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.26873825E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.78476229E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.08917608E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2450,8 +2433,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.78483897E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.78870057E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.77450409E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.95063949E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2466,8 +2449,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.74139813E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.51170777E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.89809242E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -4.15183829E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2482,8 +2465,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -7.81488574E-02                              1_GWF-(1,5,5)
- Model                              2          2 -3.51045053E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -9.16009873E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -5.81638616E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2504,8 +2487,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.13566332E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.74538835E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.50884822E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.56570187E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2520,8 +2503,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.53462925E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.91554553E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.97798536E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -6.51661140E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2536,8 +2519,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.00176825E-02                              1_GWF-(1,5,5)
- Model                              2          1 -5.57404024E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.52746252E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -9.28502454E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2552,13 +2535,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.54612933E-02                              1_GWF-(1,5,5)
- Model                              2          1 -7.91745198E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.16800809E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.32022167E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 19
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    19    Time step:     5
  
@@ -2568,8 +2551,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.17690180E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.12165452E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.91054041E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.87260385E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2584,8 +2567,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.90292746E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.58411284E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.76559367E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.64838599E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2600,8 +2583,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.73201493E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.22907909E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.74250436E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.73268674E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2616,8 +2599,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.67003620E-02                              1_GWF-(1,5,5)
- Model                              2          2 -3.12321172E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.84832925E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -5.23960126E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2638,8 +2621,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.94814840E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.77700155E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.29740599E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.67522624E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2654,8 +2637,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.31343062E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.96146174E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.72846824E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -6.67354519E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2670,8 +2653,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.74172231E-02                              1_GWF-(1,5,5)
- Model                              2          1 -5.64084571E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.23399502E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -9.50973432E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2686,13 +2669,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.24165852E-02                              1_GWF-(1,5,5)
- Model                              2          1 -8.01485153E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.82422643E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.35237447E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 20
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    20    Time step:     5
  
@@ -2702,8 +2685,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.82215530E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.13588987E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.50974485E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.91857952E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2718,8 +2701,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.49201757E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.60497972E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.30100795E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.71409039E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2734,8 +2717,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.25937997E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.25977279E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.20767794E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.82655325E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2750,8 +2733,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -6.13096287E-02                              1_GWF-(1,5,5)
- Model                              2          2 -3.16854227E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -7.23772124E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -5.37370237E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2772,8 +2755,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.70539408E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.57557626E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.01758239E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.38327153E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2788,8 +2771,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.02667170E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.67518270E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.39779060E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -6.25772921E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2804,8 +2787,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.40401318E-02                              1_GWF-(1,5,5)
- Model                              2          1 -5.23501579E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.84438188E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -8.91881344E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2820,13 +2803,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.84538257E-02                              1_GWF-(1,5,5)
- Model                              2          1 -7.44131595E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.36679133E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.26862022E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 21
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    21    Time step:     5
  
@@ -2836,8 +2819,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.35914254E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.05513314E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.97492152E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.80024685E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2852,8 +2835,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.95375696E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.49176662E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.67878259E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.54754000E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2868,8 +2851,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.63735448E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.10188351E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.48796139E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.59320814E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2884,8 +2867,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -5.41713415E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.94970426E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -6.41089324E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -5.04856382E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2906,8 +2889,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.45967890E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.24752920E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.73129982E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -3.86009765E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2922,8 +2905,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.73638991E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.20893029E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.05949057E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -5.51329118E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2938,8 +2921,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.06211664E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.57402108E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.44579976E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.86201497E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -2954,13 +2937,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.44413383E-02                              1_GWF-(1,5,5)
- Model                              2          1 -6.50707815E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.89883802E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.11901763E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 22
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    22    Time step:     5
  
@@ -2970,13 +2953,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.89022851E-02                              1_GWF-(1,5,5)
- Model                              2          1 -9.23567762E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.42780952E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.58917016E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 5 STRESS PERIOD 22
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    22    Time step:     6
  
@@ -2986,8 +2969,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.40849576E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.30726808E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.04225994E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.25090575E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3002,8 +2985,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.00702254E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.84446046E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.75168564E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.17829057E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3018,8 +3001,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.69343934E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.59265646E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.56497715E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -4.47141427E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3040,8 +3023,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.35059719E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.24639640E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.60485755E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -3.88704175E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3056,8 +3039,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.60720121E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.20735227E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.90966375E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -5.55137482E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3072,8 +3055,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.90950691E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.57185273E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.26870069E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.91567103E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3088,13 +3071,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.26440675E-02                              1_GWF-(1,5,5)
- Model                              2          1 -6.50415891E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.69011539E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.12654985E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 4 STRESS PERIOD 23
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    23    Time step:     5
  
@@ -3104,13 +3087,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.67933197E-02                              1_GWF-(1,5,5)
- Model                              2          1 -9.23186991E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.18267152E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.59970164E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 5 STRESS PERIOD 23
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    23    Time step:     6
  
@@ -3120,8 +3103,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.16208595E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.30679668E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.75553878E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.26556717E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3136,8 +3119,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.72057953E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.84393010E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.41795938E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.19860986E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3152,8 +3135,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -4.36244992E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.59217691E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -5.17876695E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -4.49945071E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3174,8 +3157,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.17696084E-02                              1_GWF-(1,5,5)
- Model                              2          1 -1.97567533E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.40046543E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -3.44124417E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3190,8 +3173,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.40178520E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.82240317E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.66781943E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.91700828E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3206,8 +3189,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.66716223E-02                              1_GWF-(1,5,5)
- Model                              2          1 -4.02581969E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.98331870E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -7.01506638E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3222,8 +3205,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.97942456E-02                              1_GWF-(1,5,5)
- Model                              2          1 -5.73188986E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.35444168E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -9.99047235E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3238,13 +3221,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.34549843E-02                              1_GWF-(1,5,5)
- Model                              2          1 -8.14339531E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.78934539E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.41977567E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 5 STRESS PERIOD 24
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    24    Time step:     6
  
@@ -3254,8 +3237,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.77279655E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.15400801E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.29672471E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.01265371E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3270,8 +3253,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.26903212E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.63048980E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.88557204E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.84473233E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3286,8 +3269,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.84193588E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.29568857E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.56481301E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -4.00697920E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3308,8 +3291,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.07213915E-02                              1_GWF-(1,5,5)
- Model                              2          1 -1.90788443E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.27572670E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -3.33859052E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3324,8 +3307,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.27700466E-02                              1_GWF-(1,5,5)
- Model                              2          1 -2.72480140E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.51924118E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -4.76850581E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3340,8 +3323,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.51884858E-02                              1_GWF-(1,5,5)
- Model                              2          1 -3.88531452E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -1.80659389E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -6.80009007E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3356,8 +3339,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -1.80345528E-02                              1_GWF-(1,5,5)
- Model                              2          1 -5.52965655E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.14458622E-02                              1_GWF-(1,5,5)
+ Model                              2          1 -9.67903811E-05       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3372,13 +3355,13 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.13715487E-02                              1_GWF-(1,5,5)
- Model                              2          1 -7.85238632E-05       *                      1_GWF-(1,5,5)
+ Model                              1          2 -2.54063147E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.37462369E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
  2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 5 STRESS PERIOD 25
- 3 TOTAL ITERATIONS
+ 4 TOTAL ITERATIONS
  
     Solving:  Stress period:    25    Time step:     6
  
@@ -3388,8 +3371,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.52672638E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.11214694E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.00262311E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -1.94714186E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3404,8 +3387,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -2.97922847E-02                              1_GWF-(1,5,5)
- Model                              2          2 -1.57030235E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -3.53871020E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -2.74961057E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3420,8 +3403,8 @@ PROCESSING MODEL CONNECTIONS
                                 OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
  OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
  ----------------------------------------------------------------------------------------------------------
- Model                              1          2 -3.50174028E-02                              1_GWF-(1,5,5)
- Model                              2          2 -2.20920806E-04       *                      1_GWF-(1,5,5)
+ Model                              1          2 -4.15695673E-02                              1_GWF-(1,5,5)
+ Model                              2          2 -3.86877681E-04       *                      1_GWF-(1,5,5)
  ----------------------------------------------------------------------------------------------------------
 
 
@@ -3443,6 +3426,6 @@ PROCESSING MODEL CONNECTIONS
 
 
  
- Run end date and time (yyyy/mm/dd hh:mm:ss): 2024/01/30 15:55:07
- Elapsed run time:  0.565 Seconds
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2024/02/01 17:40:26
+ Elapsed run time:  3.340 Seconds
  Normal termination of simulation.
