@@ -1,0 +1,14 @@
+# NPF6 input file, prepared by MF5to6 on 3/30/2024 at 15:05:45.
+
+BEGIN Options
+  PERCHED
+  VARIABLECV  DEWATERED
+  SAVE_FLOWS  mumodel_7-2b.cbb
+END Options
+
+BEGIN GRIDDATA
+  Icelltype LAYERED
+    CONSTANT  1
+  K  LAYERED
+    CONSTANT    50.0000000    
+END GRIDDATA

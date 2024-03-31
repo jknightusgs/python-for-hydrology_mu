@@ -41,6 +41,7 @@ dependencies:
   - statsmodels
   - dataretrieval
   - flopy
+  - pyemu
   - gis-utils
   - sfrmaker
   - modflow-export

@@ -1,0 +1,23 @@
+pcf version=2
+* control data keyword
+pestmode                                 estimation
+noptmax                                 2
+svdmode                                 1
+maxsing                          10000000
+eigthresh                           1e-06
+eigwrite                                1
+additional_ins_delimiters      ,
+ies_par_en                     prior.jcb
+ies_num_reals                  200
+* parameter groups external
+mumodel.pargp_data.csv
+* parameter data external
+mumodel.par_data.csv
+* observation data external
+mumodel.obs_data.csv
+* model command line
+python forward_run.py
+* model input external
+mumodel.tplfile_data.csv
+* model output external
+mumodel.insfile_data.csv

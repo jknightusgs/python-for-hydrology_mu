@@ -1,0 +1,1543 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.1.0
+binary compiled on Sep 14 2021 at 11:43:16
+
+using control file: "mumodel.pst"
+in directory: "C:\Users\knigh\Documents\coding\python-for-hydrology_mu\notebooks\part2_muohio\data\master_pst"
+on host: "JAKEBOOK"
+started at 03/30/24 16:10:33
+
+...reading external file 'mumodel.pargp_data.csv'
+...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
+...read 9 lines from external file
+...reading external file 'mumodel.par_data.csv'
+...header line: PARNME,PARTRANS,PARCHGLIM,PARVAL1,PARLBND,PARUBND,PARGP,SCALE,OFFSET,DERCOM,PNAME,INST,PTYPE,PSTYLE,I,J,ZONE,X,Y,PARVAL1_TRANS,PARLBND_TRANS,PARUBND_TRANS
+...read 412 lines from external file
+...reading external file 'mumodel.obs_data.csv'
+...header line: OBSNME,OBSVAL,WEIGHT,OBGNME,DATETIME
+...read 387 lines from external file
+...reading external file 'mumodel.tplfile_data.csv'
+...header line: PEST_FILE,MODEL_FILE
+...read 9 lines from external file
+...reading external file 'mumodel.insfile_data.csv'
+...header line: PEST_FILE,MODEL_FILE
+...read 2 lines from external file
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 411
+    Number of adjustable parameters = 411
+    Number of observations = 386
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 1
+    facparmax = 1.1
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 2
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 3
+yamr_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: ,
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.01
+  0.1
+  1
+
+...pestpp-mou options:
+mou_generator: DE
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: prior.jcb
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 4
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 200
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+
+
+
+Model command line(s):- 
+    python forward_run.py
+
+Model interface files:-
+    template files:
+      npf_k_inst0_constant.csv.tpl
+      npf_k_inst1pp.dat.tpl
+      npf_k_inst2_grid.csv.tpl
+      sto_sy_inst0_constant.csv.tpl
+      sto_sy_inst1pp.dat.tpl
+      sto_sy_inst2_grid.csv.tpl
+      rch_r_inst0_constant.csv.tpl
+      rch_r_inst1pp.dat.tpl
+    model input files:
+      mult\npf_k_inst0_constant.csv
+      npf_k_inst1pp.dat
+      mult\npf_k_inst2_grid.csv
+      mult\sto_sy_inst0_constant.csv
+      sto_sy_inst1pp.dat
+      mult\sto_sy_inst2_grid.csv
+      mult\rch_r_inst0_constant.csv
+      rch_r_inst1pp.dat
+
+    instruction files:
+      hds.csv.ins
+    model output files:
+      hds.csv
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+npf_gr              RELATIVE                     0.01                        0         SWITCH                        2
+sto_gr              RELATIVE                     0.01                        0         SWITCH                        2
+npf_pp              RELATIVE                     0.01                        0         SWITCH                        2
+sto_pp              RELATIVE                     0.01                        0         SWITCH                        2
+rch_pp              RELATIVE                     0.01                        0         SWITCH                        2
+npf_cn              RELATIVE                     0.01                        0         SWITCH                        2
+sto_cn              RELATIVE                     0.01                        0         SWITCH                        2
+rch_cn              RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME                                                               TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+pname:npf_k_inst:0_ptype:cn_pstyle:m                               log                     FACTOR              1            0.5              2       npf_cn              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:2_j:2_zone:1                log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:2_j:6_zone:1                log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:6_j:2_zone:1                log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:6_j:6_zone:1                log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:10_j:2_zone:1               log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:10_j:6_zone:1               log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:14_j:2_zone:1               log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:14_j:6_zone:1               log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:18_j:2_zone:1               log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:1_ptype:pp_pstyle:m_i:18_j:6_zone:1               log                     FACTOR              1            0.5              2       npf_pp              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:0_x:250.00_y:10250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:1_x:750.00_y:10250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:2_x:1250.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:3_x:1750.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:4_x:2250.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:5_x:2750.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:6_x:3250.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:7_x:3750.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:0_j:8_x:4250.00_y:10250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:0_x:250.00_y:9750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:1_x:750.00_y:9750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:2_x:1250.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:3_x:1750.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:4_x:2250.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:5_x:2750.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:6_x:3250.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:7_x:3750.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:1_j:8_x:4250.00_y:9750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:0_x:250.00_y:9250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:1_x:750.00_y:9250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:2_x:1250.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:3_x:1750.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:4_x:2250.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:5_x:2750.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:6_x:3250.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:7_x:3750.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:2_j:8_x:4250.00_y:9250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:0_x:250.00_y:8750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:1_x:750.00_y:8750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:2_x:1250.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:3_x:1750.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:4_x:2250.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:5_x:2750.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:6_x:3250.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:7_x:3750.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:3_j:8_x:4250.00_y:8750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:0_x:250.00_y:8250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:1_x:750.00_y:8250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:2_x:1250.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:3_x:1750.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:4_x:2250.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:5_x:2750.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:6_x:3250.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:7_x:3750.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:4_j:8_x:4250.00_y:8250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:0_x:250.00_y:7750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:1_x:750.00_y:7750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:2_x:1250.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:3_x:1750.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:4_x:2250.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:5_x:2750.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:6_x:3250.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:7_x:3750.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:5_j:8_x:4250.00_y:7750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:0_x:250.00_y:7250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:1_x:750.00_y:7250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:2_x:1250.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:3_x:1750.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:4_x:2250.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:5_x:2750.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:6_x:3250.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:7_x:3750.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:6_j:8_x:4250.00_y:7250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:0_x:250.00_y:6750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:1_x:750.00_y:6750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:2_x:1250.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:3_x:1750.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:4_x:2250.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:5_x:2750.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:6_x:3250.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:7_x:3750.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:7_j:8_x:4250.00_y:6750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:0_x:250.00_y:6250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:1_x:750.00_y:6250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:2_x:1250.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:3_x:1750.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:4_x:2250.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:5_x:2750.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:6_x:3250.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:7_x:3750.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:8_j:8_x:4250.00_y:6250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:0_x:250.00_y:5750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:1_x:750.00_y:5750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:2_x:1250.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:3_x:1750.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:4_x:2250.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:5_x:2750.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:6_x:3250.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:7_x:3750.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:9_j:8_x:4250.00_y:5750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:0_x:250.00_y:5250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:1_x:750.00_y:5250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:2_x:1250.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:3_x:1750.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:4_x:2250.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:5_x:2750.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:6_x:3250.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:7_x:3750.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:10_j:8_x:4250.00_y:5250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:0_x:250.00_y:4750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:1_x:750.00_y:4750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:2_x:1250.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:3_x:1750.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:4_x:2250.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:5_x:2750.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:6_x:3250.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:7_x:3750.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:11_j:8_x:4250.00_y:4750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:0_x:250.00_y:4250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:1_x:750.00_y:4250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:2_x:1250.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:3_x:1750.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:4_x:2250.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:5_x:2750.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:6_x:3250.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:7_x:3750.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:12_j:8_x:4250.00_y:4250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:0_x:250.00_y:3750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:1_x:750.00_y:3750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:2_x:1250.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:3_x:1750.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:4_x:2250.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:5_x:2750.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:6_x:3250.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:7_x:3750.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:13_j:8_x:4250.00_y:3750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:0_x:250.00_y:3250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:1_x:750.00_y:3250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:2_x:1250.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:3_x:1750.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:4_x:2250.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:5_x:2750.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:6_x:3250.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:7_x:3750.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:14_j:8_x:4250.00_y:3250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:0_x:250.00_y:2750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:1_x:750.00_y:2750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:2_x:1250.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:3_x:1750.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:4_x:2250.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:5_x:2750.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:6_x:3250.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:7_x:3750.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:15_j:8_x:4250.00_y:2750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:0_x:250.00_y:2250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:1_x:750.00_y:2250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:2_x:1250.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:3_x:1750.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:4_x:2250.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:5_x:2750.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:6_x:3250.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:7_x:3750.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:16_j:8_x:4250.00_y:2250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:0_x:250.00_y:1750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:1_x:750.00_y:1750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:2_x:1250.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:3_x:1750.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:4_x:2250.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:5_x:2750.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:6_x:3250.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:7_x:3750.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:17_j:8_x:4250.00_y:1750.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:0_x:250.00_y:1250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:1_x:750.00_y:1250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:2_x:1250.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:3_x:1750.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:4_x:2250.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:5_x:2750.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:6_x:3250.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:7_x:3750.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:18_j:8_x:4250.00_y:1250.00  log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:0_x:250.00_y:750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:1_x:750.00_y:750.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:2_x:1250.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:3_x:1750.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:4_x:2250.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:5_x:2750.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:6_x:3250.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:7_x:3750.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:19_j:8_x:4250.00_y:750.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:0_x:250.00_y:250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:1_x:750.00_y:250.00    log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:2_x:1250.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:3_x:1750.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:4_x:2250.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:5_x:2750.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:6_x:3250.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:7_x:3750.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:npf_k_inst:2_ptype:gr_pstyle:m_i:20_j:8_x:4250.00_y:250.00   log                     FACTOR              1            0.5              2       npf_gr              1              0                   1
+pname:sto_sy_inst:0_ptype:cn_pstyle:m                              log                     FACTOR              1            0.5              2       sto_cn              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:2_j:2_zone:1               log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:2_j:6_zone:1               log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:6_j:2_zone:1               log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:6_j:6_zone:1               log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:10_j:2_zone:1              log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:10_j:6_zone:1              log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:14_j:2_zone:1              log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:14_j:6_zone:1              log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:18_j:2_zone:1              log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:1_ptype:pp_pstyle:m_i:18_j:6_zone:1              log                     FACTOR              1            0.5              2       sto_pp              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:0_x:250.00_y:10250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:1_x:750.00_y:10250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:2_x:1250.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:3_x:1750.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:4_x:2250.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:5_x:2750.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:6_x:3250.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:7_x:3750.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:0_j:8_x:4250.00_y:10250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:0_x:250.00_y:9750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:1_x:750.00_y:9750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:2_x:1250.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:3_x:1750.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:4_x:2250.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:5_x:2750.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:6_x:3250.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:7_x:3750.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:1_j:8_x:4250.00_y:9750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:0_x:250.00_y:9250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:1_x:750.00_y:9250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:2_x:1250.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:3_x:1750.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:4_x:2250.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:5_x:2750.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:6_x:3250.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:7_x:3750.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:2_j:8_x:4250.00_y:9250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:0_x:250.00_y:8750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:1_x:750.00_y:8750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:2_x:1250.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:3_x:1750.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:4_x:2250.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:5_x:2750.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:6_x:3250.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:7_x:3750.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:3_j:8_x:4250.00_y:8750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:0_x:250.00_y:8250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:1_x:750.00_y:8250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:2_x:1250.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:3_x:1750.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:4_x:2250.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:5_x:2750.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:6_x:3250.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:7_x:3750.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:4_j:8_x:4250.00_y:8250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:0_x:250.00_y:7750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:1_x:750.00_y:7750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:2_x:1250.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:3_x:1750.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:4_x:2250.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:5_x:2750.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:6_x:3250.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:7_x:3750.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:5_j:8_x:4250.00_y:7750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:0_x:250.00_y:7250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:1_x:750.00_y:7250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:2_x:1250.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:3_x:1750.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:4_x:2250.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:5_x:2750.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:6_x:3250.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:7_x:3750.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:6_j:8_x:4250.00_y:7250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:0_x:250.00_y:6750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:1_x:750.00_y:6750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:2_x:1250.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:3_x:1750.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:4_x:2250.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:5_x:2750.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:6_x:3250.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:7_x:3750.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:7_j:8_x:4250.00_y:6750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:0_x:250.00_y:6250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:1_x:750.00_y:6250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:2_x:1250.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:3_x:1750.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:4_x:2250.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:5_x:2750.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:6_x:3250.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:7_x:3750.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:8_j:8_x:4250.00_y:6250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:0_x:250.00_y:5750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:1_x:750.00_y:5750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:2_x:1250.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:3_x:1750.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:4_x:2250.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:5_x:2750.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:6_x:3250.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:7_x:3750.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:9_j:8_x:4250.00_y:5750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:0_x:250.00_y:5250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:1_x:750.00_y:5250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:2_x:1250.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:3_x:1750.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:4_x:2250.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:5_x:2750.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:6_x:3250.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:7_x:3750.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:10_j:8_x:4250.00_y:5250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:0_x:250.00_y:4750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:1_x:750.00_y:4750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:2_x:1250.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:3_x:1750.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:4_x:2250.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:5_x:2750.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:6_x:3250.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:7_x:3750.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:11_j:8_x:4250.00_y:4750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:0_x:250.00_y:4250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:1_x:750.00_y:4250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:2_x:1250.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:3_x:1750.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:4_x:2250.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:5_x:2750.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:6_x:3250.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:7_x:3750.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:12_j:8_x:4250.00_y:4250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:0_x:250.00_y:3750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:1_x:750.00_y:3750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:2_x:1250.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:3_x:1750.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:4_x:2250.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:5_x:2750.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:6_x:3250.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:7_x:3750.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:13_j:8_x:4250.00_y:3750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:0_x:250.00_y:3250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:1_x:750.00_y:3250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:2_x:1250.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:3_x:1750.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:4_x:2250.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:5_x:2750.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:6_x:3250.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:7_x:3750.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:14_j:8_x:4250.00_y:3250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:0_x:250.00_y:2750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:1_x:750.00_y:2750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:2_x:1250.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:3_x:1750.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:4_x:2250.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:5_x:2750.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:6_x:3250.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:7_x:3750.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:15_j:8_x:4250.00_y:2750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:0_x:250.00_y:2250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:1_x:750.00_y:2250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:2_x:1250.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:3_x:1750.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:4_x:2250.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:5_x:2750.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:6_x:3250.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:7_x:3750.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:16_j:8_x:4250.00_y:2250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:0_x:250.00_y:1750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:1_x:750.00_y:1750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:2_x:1250.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:3_x:1750.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:4_x:2250.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:5_x:2750.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:6_x:3250.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:7_x:3750.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:17_j:8_x:4250.00_y:1750.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:0_x:250.00_y:1250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:1_x:750.00_y:1250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:2_x:1250.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:3_x:1750.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:4_x:2250.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:5_x:2750.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:6_x:3250.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:7_x:3750.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:18_j:8_x:4250.00_y:1250.00 log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:0_x:250.00_y:750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:1_x:750.00_y:750.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:2_x:1250.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:3_x:1750.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:4_x:2250.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:5_x:2750.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:6_x:3250.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:7_x:3750.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:19_j:8_x:4250.00_y:750.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:0_x:250.00_y:250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:1_x:750.00_y:250.00   log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:2_x:1250.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:3_x:1750.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:4_x:2250.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:5_x:2750.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:6_x:3250.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:7_x:3750.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:sto_sy_inst:2_ptype:gr_pstyle:m_i:20_j:8_x:4250.00_y:250.00  log                     FACTOR              1            0.5              2       sto_gr              1              0                   1
+pname:rch_r_inst:0_ptype:cn_pstyle:m                               log                     FACTOR              1           0.75           1.25       rch_cn              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:2_j:2_zone:1                log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:2_j:6_zone:1                log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:6_j:2_zone:1                log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:6_j:6_zone:1                log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:10_j:2_zone:1               log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:10_j:6_zone:1               log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:14_j:2_zone:1               log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:14_j:6_zone:1               log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:18_j:2_zone:1               log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+pname:rch_r_inst:1_ptype:pp_pstyle:m_i:18_j:6_zone:1               log                     FACTOR              1           0.75           1.25       rch_pp              1              0                   1
+
+
+
+Observation information
+NAME                                                                             VALUE                GROUP              WEIGHT
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:1.0                         1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:100.7605413847              1013.41       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:104.5309323339              1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:109.0554014729              1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:11.08589276419              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:114.4847644398              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:121.0                       1013.44       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:122.8788920947              1013.44       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:125.1335626083              1013.44       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:127.8391672246              1013.44       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:131.0858927642              1013.44       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:134.9819634117              1013.44       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:139.6572481887              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:14.98196341169              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:145.2675899211              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:152.0                       1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:153.8182826723              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:156.000221879               1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:158.618548927               1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:161.7605413847              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:165.5309323339              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:170.0554014729              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:175.4847644398              1013.43       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:182.0                       1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:183.8788920947              1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:186.1335626083              1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:188.8391672246              1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:19.6572481887               1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:192.0858927642              1013.42       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:195.9819634117              1013.41       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:2.878892094669              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:200.6572481887              1013.41       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:206.2675899211              1013.41       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:213.0                        1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:214.8788920947               1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:217.1335626083               1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:219.8391672246               1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:223.0858927642               1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:226.9819634117               1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:231.6572481887              1013.39       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:237.2675899211              1013.39       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:244.0                       1013.39       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:245.8182826723              1013.38       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:248.000221879               1013.38       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:25.26758992111              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:250.618548927               1013.38       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:253.7605413847              1013.38       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:257.5309323339              1013.38       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:262.0554014729              1013.37       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:267.4847644398              1013.37       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:274.0                       1013.37       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:275.8788920947              1013.37       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:278.1335626083              1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:280.8391672246              1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:284.0858927642              1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:287.9819634117              1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:292.6572481887              1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:298.2675899211              1013.35       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:305.0                       1013.35       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:306.8182826723              1013.35       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:309.000221879               1013.35       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:311.618548927               1013.34       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:314.7605413847              1013.34       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:318.5309323339              1013.34       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:32.0                        1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:323.0554014729              1013.34       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:328.4847644398              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:33.69706382744              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:335.0                       1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:336.8788920947              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:339.1335626083              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:341.8391672246              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:345.0858927642              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:348.9819634117              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:35.73354042038              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:353.6572481887              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:359.2675899211              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:366.0                       1013.32       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:367.8788920947              1013.28       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:370.1335626083              1013.22       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:372.8391672246              1013.16       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:376.0858927642              1013.09       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:379.9819634117              1013.01       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:38.17731233189              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:384.6572481887              1012.91       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:390.2675899211               1012.8       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:397.0                       1012.68       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:398.6970638274              1012.65       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:400.7335404204              1012.61       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:403.1773123319              1012.57       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:406.1098386257              1012.52       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:409.6288701783              1012.46       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:41.10983862572              1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:413.8517080414               1012.4       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:418.9191134771              1012.32       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:425.0                       1012.23       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:426.8788920947               1012.2       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:429.1335626083              1012.17       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:431.8391672246              1012.14       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:435.0858927642               1012.1       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:438.9819634117              1012.05       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:44.6288701783               1013.33       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:443.6572481887              1011.99       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:449.2675899211              1011.92       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:456.0                       1011.85       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:457.8182826723              1011.83       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:460.000221879                1011.8       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:462.618548927               1011.77       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:465.7605413847              1011.74       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:469.5309323339               1011.7       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:474.0554014729              1011.65       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:479.4847644398              1011.59       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:48.85170804141              1013.34       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:486.0                       1011.53       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:487.8788920947              1011.51       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:490.1335626083              1011.48       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:492.8391672246              1011.46       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:496.0858927642              1011.42       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:499.9819634117              1011.38       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:5.133562608273              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:504.6572481887              1011.34       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:510.2675899211              1011.28       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:517.0                       1011.22       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:518.8182826723               1011.2       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:521.000221879               1011.18       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:523.618548927               1011.16       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:526.7605413847              1011.13       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:53.91911347713              1013.34       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:530.5309323339              1011.09       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:535.0554014729              1011.05       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:540.4847644398              1011.01       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:547.0                       1010.95       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:548.8788920947              1010.94       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:551.1335626083              1010.92       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:553.8391672246              1010.89       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:557.0858927642              1010.87       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:560.9819634117              1010.84       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:565.6572481887               1010.8       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:571.2675899211              1010.76       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:578.0                       1010.71       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:579.8788920947              1010.69       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:582.1335626083              1010.67       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:584.8391672246              1010.65       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:588.0858927642              1010.63       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:591.9819634117               1010.6       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:596.6572481887              1010.57       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:60.0                        1013.35       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:602.2675899211              1010.53       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:609.0                       1010.49       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:61.87889209467              1013.35       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:610.8182826723              1010.48       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:613.000221879               1010.46       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:615.618548927               1010.44       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:618.7605413847              1010.42       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:622.5309323339               1010.4       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:627.0554014729              1010.37       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:632.4847644398              1010.34       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:639.0                        1010.3       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:64.13356260827              1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:640.8788920947              1010.29       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:643.1335626083              1010.27       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:645.8391672246              1010.26       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:649.0858927642              1010.24       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:652.9819634117              1010.22       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:657.6572481887              1010.19       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:66.8391672246               1013.36       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:663.2675899211              1010.16       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:670.0                       1010.12       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:671.8182826723              1010.11       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:674.000221879                1010.1       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:676.618548927               1010.09       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:679.7605413847              1010.07       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:683.5309323339              1010.05       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:688.0554014729              1010.03       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:693.4847644398                 1010       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:7.839167224597              1013.32       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:70.08589276419              1013.37       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:700.0                       1009.97       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:701.8788920947              1009.96       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:704.1335626083              1009.95       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:706.8391672246              1009.94       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:710.0858927642              1009.92       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:713.9819634117              1009.91       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:718.6572481887              1009.89       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:724.2675899211              1009.86       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:73.98196341169              1013.37       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:731.0                       1009.83       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:78.6572481887               1013.38       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:84.26758992111              1013.39       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:91.0                         1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:92.81828267226               1013.4       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:95.00022187897              1013.41       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:97.61854892703              1013.41       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:1.0                         1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:100.7605413847              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:104.5309323339              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:109.0554014729              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:11.08589276419              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:114.4847644398              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:121.0                       1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:122.8788920947              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:125.1335626083              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:127.8391672246              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:131.0858927642              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:134.9819634117              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:139.6572481887              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:14.98196341169              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:145.2675899211              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:152.0                       1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:153.8182826723              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:156.000221879               1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:158.618548927               1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:161.7605413847              1018.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:165.5309323339              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:170.0554014729              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:175.4847644398              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:182.0                       1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:183.8788920947              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:186.1335626083              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:188.8391672246              1018.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:19.6572481887               1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:192.0858927642              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:195.9819634117              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:2.878892094669              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:200.6572481887              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:206.2675899211              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:213.0                        1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:214.8788920947               1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:217.1335626083               1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:219.8391672246               1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:223.0858927642               1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:226.9819634117               1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:231.6572481887              1018.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:237.2675899211              1018.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:244.0                       1018.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:245.8182826723              1018.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:248.000221879               1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:25.26758992111              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:250.618548927               1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:253.7605413847              1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:257.5309323339              1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:262.0554014729              1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:267.4847644398              1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:274.0                       1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:275.8788920947              1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:278.1335626083              1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:280.8391672246              1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:284.0858927642              1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:287.9819634117              1018.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:292.6572481887              1018.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:298.2675899211              1018.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:305.0                       1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:306.8182826723              1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:309.000221879               1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:311.618548927               1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:314.7605413847              1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:318.5309323339              1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:32.0                        1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:323.0554014729              1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:328.4847644398              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:33.69706382744              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:335.0                       1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:336.8788920947              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:339.1335626083              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:341.8391672246              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:345.0858927642              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:348.9819634117              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:35.73354042038              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:353.6572481887              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:359.2675899211              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:366.0                       1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:367.8788920947              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:370.1335626083              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:372.8391672246              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:376.0858927642              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:379.9819634117              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:38.17731233189              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:384.6572481887              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:390.2675899211              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:397.0                       1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:398.6970638274              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:400.7335404204              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:403.1773123319              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:406.1098386257              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:409.6288701783              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:41.10983862572              1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:413.8517080414              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:418.9191134771              1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:425.0                       1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:426.8788920947              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:429.1335626083              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:431.8391672246              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:435.0858927642              1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:438.9819634117              1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:44.6288701783               1018.84       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:443.6572481887              1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:449.2675899211              1018.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:456.0                        1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:457.8182826723               1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:460.000221879                1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:462.618548927               1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:465.7605413847              1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:469.5309323339              1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:474.0554014729              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:479.4847644398              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:48.85170804141              1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:486.0                       1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:487.8788920947              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:490.1335626083              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:492.8391672246              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:496.0858927642              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:499.9819634117              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:5.133562608273              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:504.6572481887              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:510.2675899211              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:517.0                       1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:518.8182826723              1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:521.000221879               1018.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:523.618548927               1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:526.7605413847              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:53.91911347713              1018.85       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:530.5309323339              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:535.0554014729              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:540.4847644398              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:547.0                       1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:548.8788920947              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:551.1335626083              1018.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:553.8391672246              1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:557.0858927642              1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:560.9819634117              1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:565.6572481887              1018.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:571.2675899211               1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:578.0                        1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:579.8788920947               1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:582.1335626083               1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:584.8391672246               1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:588.0858927642               1018.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:591.9819634117              1018.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:596.6572481887              1018.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:60.0                        1018.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:602.2675899211              1018.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:609.0                       1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:61.87889209467              1018.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:610.8182826723              1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:613.000221879               1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:615.618548927               1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:618.7605413847              1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:622.5309323339              1018.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:627.0554014729              1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:632.4847644398              1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:639.0                       1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:64.13356260827              1018.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:640.8788920947              1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:643.1335626083              1018.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:645.8391672246              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:649.0858927642              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:652.9819634117              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:657.6572481887              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:66.8391672246               1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:663.2675899211              1018.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:670.0                       1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:671.8182826723              1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:674.000221879               1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:676.618548927               1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:679.7605413847              1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:683.5309323339              1018.85       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:688.0554014729              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:693.4847644398              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:7.839167224597              1018.83       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:70.08589276419              1018.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:700.0                       1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:701.8788920947              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:704.1335626083              1018.84       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:706.8391672246              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:710.0858927642              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:713.9819634117              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:718.6572481887              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:724.2675899211              1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:73.98196341169              1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:731.0                       1018.83       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:78.6572481887               1018.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:84.26758992111              1018.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:91.0                         1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:92.81828267226               1018.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:95.00022187897              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:97.61854892703              1018.91       hds001_010_004                   1
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+
+
+
+...resetting max_run_fail to 1
+...resetting overdue_giveup_fac to 2.0
+...resetting overdue_resched_fac to 1.15
+
+  ---  initializing  ---  
+
+  ---  using glm algorithm  ---  
+...using REDSVD for truncated svd solve
+...maxsing: 10000000
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.1 , 1 , 10 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  1
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 4
+...initializing observation noise covariance matrix
+WARNING: Cov::try_from(): 194 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
+
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...loading par ensemble from binary file prior.jcb
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  200
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+resetting obs + noise ensemble real names to parameter ensemble real names
+checking for denormal values in pe
+...saved initial parameter ensemble to  mumodel.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  mumodel.obs+noise.csv
+...setting weights ensemble from control file weights
+...using subset in lambda testing, number of realizations used in subset testing:  4
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 200
+...saved initial obs ensemble to mumodel.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured         3299.4        4338.14              0        25616.4
+         actual        3108.54        4333.45              0        24952.5
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...checking for prior-data conflict...
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured         3299.4        4338.14              0        25616.4
+         actual        3108.54        4333.45              0        24952.5
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...current lambda: 1
+
+  ---  initialization complete  ---  
+
+  ---  starting solve for iteration: 1  ---  
+...current lambda:  1
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.1
+see .log file for more details
+...finished calcs for: 0.1
+...starting calcs for glm factor 1
+see .log file for more details
+...finished calcs for: 1
+...starting calcs for glm factor 10
+see .log file for more details
+...finished calcs for: 10
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  41:41, 53:53, 68:68, 199:BASE, 
+...subset idx:oe real name:  41:41, 53:53, 68:68, 199:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  3299.4
+...last stdev:  4338.14
+
+  ---  phi summary for lambda, scale fac:0.1 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        221.965        153.692              0        327.485
+         actual        102.924        74.9968              0        176.152
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.1 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        205.242        158.603              0        371.921
+         actual        64.8156        91.1547              0        194.319
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.1 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        355.858        313.953              0        720.233
+         actual        207.218        254.011              0        548.858
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:1 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        222.089         153.78              0        327.951
+         actual        103.044        75.0109              0        176.008
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:1 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured         205.15        158.488              0        371.555
+         actual        64.7184        90.9788              0        193.938
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:1 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        355.664        313.703              0        719.466
+         actual        207.018        253.695              0        548.074
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:10 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        225.247        156.328              0        335.223
+         actual        106.328        77.3073              0        180.049
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:10 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        202.228        155.534              0        364.698
+         actual        61.9539        87.7026              0        186.861
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:10 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        349.831        307.657              0        705.949
+         actual        201.355         247.42              0        534.324
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 10 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        202.228        155.534              0        364.698
+         actual        61.9539        87.7026              0        186.861
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:10 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 10 , 1 , 
+       phi type           mean            std            min            max
+       measured        268.865        174.864              0        1342.57
+         actual        82.5113         174.06              0        1134.35
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  3464.37
+...current best mean phi:  268.865
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  7.5  ---  
+
+  ---  EnsembleMethod iteration 1 report  ---  
+   number of active realizations:  200
+   number of model runs:           432
+      current obs ensemble saved to mumodel.1.obs.csv
+      current par ensemble saved to mumodel.1.par.csv
+       phi type           mean            std            min            max
+       measured        268.865        174.864              0        1342.57
+         actual        82.5113         174.06              0        1134.35
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+npf_cn              1681.99     42.2917               0               0   2.3e+03        85         1
+rch_pp              2.8e+02         1.1               2               0   2.1e+03     5e+02         1
+sto_gr              1.2e+02        0.62              40               0   2.2e+03   1.8e+03         9
+sto_pp                   86        0.76               1               0   1.5e+03   1.1e+03         2
+rch_cn                   72          10               0               0     2e+02     1e+02         0
+npf_pp                   69         8.1               0               0   3.2e+02   2.2e+03         0
+npf_gr                   47        0.75              38               0     1e+03   8.9e+02         5
+sto_cn                    2       0.079               0               0   1.3e+02   1.2e+02         0
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to mumodel.1.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 3299.4 , 268.865 , 
+...best phi yet:  268.865
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 2  ---  
+...current lambda:  7.5
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.75
+see .log file for more details
+...finished calcs for: 0.75
+...starting calcs for glm factor 7.5
+see .log file for more details
+...finished calcs for: 7.5
+...starting calcs for glm factor 75
+see .log file for more details
+...finished calcs for: 75
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  3:BASE, 50:47, 65:63, 118:117, 
+...subset idx:oe real name:  3:BASE, 50:47, 65:63, 118:117, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  268.865
+...last stdev:  174.864
+
+  ---  phi summary for lambda, scale fac:0.75 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured         146.46        98.1174              0        206.213
+         actual        1.46675        1.28226              0         3.0983
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.75 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.992        97.2138              0        204.853
+         actual        0.48566       0.698173              0        1.48562
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.75 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.747        97.0694              0        204.481
+         actual       0.436261        0.43178              0        1.01138
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:7.5 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        149.044        99.7299              0        209.408
+         actual        3.70576        3.11232              0        6.55383
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:7.5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        147.549        98.7991              0         208.34
+         actual        2.58327        2.75235              0        5.32023
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:7.5 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        147.168        98.5632              0        207.973
+         actual        2.35093        2.59067              0        4.88718
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:75 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        153.767         102.72              0        212.613
+         actual        7.78417        5.29853              0        11.8142
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:75 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        152.639            102              0        212.251
+         actual        6.81125        4.85141              0        10.8287
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:75 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        152.232        101.742              0        212.115
+         actual        6.46647        4.74271              0        10.4873
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.75 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.747        97.0694              0        204.481
+         actual       0.436261        0.43178              0        1.01138
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.75 , 1.1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.75 , 1.1 , 
+       phi type           mean            std            min            max
+       measured        189.875        23.0048              0        248.203
+         actual        2.72579        2.98244              0        17.9477
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  282.308
+...current best mean phi:  189.875
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.5625  ---  
+
+  ---  EnsembleMethod iteration 2 report  ---  
+   number of active realizations:  200
+   number of model runs:           664
+      current obs ensemble saved to mumodel.2.obs.csv
+      current par ensemble saved to mumodel.2.par.csv
+       phi type           mean            std            min            max
+       measured        189.875        23.0048              0        248.203
+         actual        2.72579        2.98244              0        17.9477
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+rch_pp              1153.38     1.43301               2               0   2.1e+03   4.7e+02         1
+sto_pp              1.1e+03         1.7               0               0   1.5e+03   3.1e+02         7
+sto_gr              7.4e+02        0.89              34               0   2.2e+03   8.1e+02        32
+npf_gr              4.5e+02           1              24               0     1e+03     1e+03        26
+npf_cn              2.2e+02          44               0               0   2.3e+03     4e+02         1
+npf_pp                   87         8.6               0               0   3.2e+02   6.8e+02         0
+rch_cn                   40          11               0               0     2e+02   1.3e+02         0
+sto_cn                   26        0.25               0               0   1.3e+02   1.7e+02         0
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to mumodel.2.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 3299.4 , 268.865 , 189.875 , 
+...best phi yet:  189.875
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+
+pestpp-ies analysis complete...
+started at 03/30/24 16:10:33
+finished at 03/30/24 16:19:52
+took 9.31667 minutes

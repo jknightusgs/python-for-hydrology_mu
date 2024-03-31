@@ -1,5 +1,0 @@
-# OBS6 input file, prepared by MF5to6 on 2/21/2024 at 17:06:10.
-BEGIN Options
-  PRINT_INPUT
-  DIGITS  7
-END Options
