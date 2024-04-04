@@ -13,7 +13,7 @@ binary compiled on Sep 14 2021 at 11:43:16
 using control file: "mumodel.pst"
 in directory: "C:\models\python-for-hydrology_mu\notebooks\part2_muohio\data\mumodel_pst"
 on host: "IGSWZT141L078"
-started at 04/04/24 10:02:36
+started at 04/04/24 12:06:39
 
 ...reading external file 'mumodel.pargp_data.csv'
 ...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
@@ -1141,6 +1141,6 @@ PEST SVD Information
 
 
 pestpp-ies analysis complete...
-started at 04/04/24 10:02:36
-finished at 04/04/24 10:02:39
-took 0.0333333 minutes
+started at 04/04/24 12:06:39
+finished at 04/04/24 12:06:46
+took 0.116667 minutes
