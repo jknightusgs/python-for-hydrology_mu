@@ -76,6 +76,12 @@ If taking part 1 of the class, install MODFLOW executables by typing
 get-modflow :python
 ```
 
+**If the above command was unsuccessful, try using this instead:**
+
+```shell
+python get-modflow-via-flopy.py
+```
+
 Then type the following command to test the flopy installation
 
 ```shell
