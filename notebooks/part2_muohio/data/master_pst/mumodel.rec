@@ -11,15 +11,15 @@ version: 5.1.0
 binary compiled on Sep 14 2021 at 11:43:16
 
 using control file: "mumodel.pst"
-in directory: "C:\Users\knigh\Documents\coding\python-for-hydrology_mu\notebooks\part2_muohio\data\master_pst"
-on host: "JAKEBOOK"
-started at 03/30/24 16:10:33
+in directory: "C:\models\python-for-hydrology_mu\notebooks\part2_muohio\data\master_pst"
+on host: "IGSWZT141L078"
+started at 04/04/24 10:02:54
 
 ...reading external file 'mumodel.pargp_data.csv'
 ...header line: PARGPNME,INCTYP,DERINC,DERINCLB,FORCEN,DERINCMUL,DERMTHD,SPLITTHRESH,SPLITRELDIFF,SPLITACTION
 ...read 9 lines from external file
 ...reading external file 'mumodel.par_data.csv'
-...header line: PARNME,PARTRANS,PARCHGLIM,PARVAL1,PARLBND,PARUBND,PARGP,SCALE,OFFSET,DERCOM,PNAME,INST,PTYPE,PSTYLE,I,J,ZONE,X,Y,PARVAL1_TRANS,PARLBND_TRANS,PARUBND_TRANS
+...header line: PARNME,PARTRANS,PARCHGLIM,PARVAL1,PARLBND,PARUBND,PARGP,SCALE,OFFSET,DERCOM,I,INST,J,PNAME,PSTYLE,PTYPE,X,Y,ZONE,PARVAL1_TRANS,PARLBND_TRANS,PARUBND_TRANS
 ...read 412 lines from external file
 ...reading external file 'mumodel.obs_data.csv'
 ...header line: OBSNME,OBSVAL,WEIGHT,OBGNME,DATETIME
@@ -711,392 +711,392 @@ pname:rch_r_inst:1_ptype:pp_pstyle:m_i:18_j:6_zone:1               log          
 
 Observation information
 NAME                                                                             VALUE                GROUP              WEIGHT
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:1.0                         1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:100.7605413847              1013.41       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:104.5309323339              1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:109.0554014729              1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:11.08589276419              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:114.4847644398              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:121.0                       1013.44       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:122.8788920947              1013.44       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:125.1335626083              1013.44       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:127.8391672246              1013.44       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:131.0858927642              1013.44       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:134.9819634117              1013.44       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:139.6572481887              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:14.98196341169              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:145.2675899211              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:152.0                       1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:153.8182826723              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:156.000221879               1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:158.618548927               1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:161.7605413847              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:165.5309323339              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:170.0554014729              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:175.4847644398              1013.43       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:182.0                       1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:183.8788920947              1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:186.1335626083              1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:188.8391672246              1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:19.6572481887               1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:192.0858927642              1013.42       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:195.9819634117              1013.41       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:2.878892094669              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:200.6572481887              1013.41       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:206.2675899211              1013.41       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:213.0                        1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:214.8788920947               1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:217.1335626083               1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:219.8391672246               1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:223.0858927642               1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:226.9819634117               1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:231.6572481887              1013.39       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:237.2675899211              1013.39       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:244.0                       1013.39       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:245.8182826723              1013.38       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:248.000221879               1013.38       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:25.26758992111              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:250.618548927               1013.38       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:253.7605413847              1013.38       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:257.5309323339              1013.38       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:262.0554014729              1013.37       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:267.4847644398              1013.37       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:274.0                       1013.37       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:275.8788920947              1013.37       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:278.1335626083              1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:280.8391672246              1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:284.0858927642              1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:287.9819634117              1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:292.6572481887              1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:298.2675899211              1013.35       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:305.0                       1013.35       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:306.8182826723              1013.35       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:309.000221879               1013.35       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:311.618548927               1013.34       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:314.7605413847              1013.34       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:318.5309323339              1013.34       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:32.0                        1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:323.0554014729              1013.34       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:328.4847644398              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:33.69706382744              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:335.0                       1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:336.8788920947              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:339.1335626083              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:341.8391672246              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:345.0858927642              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:348.9819634117              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:35.73354042038              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:353.6572481887              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:359.2675899211              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:366.0                       1013.32       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:367.8788920947              1013.28       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:370.1335626083              1013.22       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:372.8391672246              1013.16       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:376.0858927642              1013.09       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:379.9819634117              1013.01       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:38.17731233189              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:384.6572481887              1012.91       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:390.2675899211               1012.8       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:397.0                       1012.68       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:398.6970638274              1012.65       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:400.7335404204              1012.61       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:403.1773123319              1012.57       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:406.1098386257              1012.52       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:409.6288701783              1012.46       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:41.10983862572              1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:413.8517080414               1012.4       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:418.9191134771              1012.32       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:425.0                       1012.23       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:426.8788920947               1012.2       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:429.1335626083              1012.17       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:431.8391672246              1012.14       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:435.0858927642               1012.1       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:438.9819634117              1012.05       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:44.6288701783               1013.33       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:443.6572481887              1011.99       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:449.2675899211              1011.92       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:456.0                       1011.85       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:457.8182826723              1011.83       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:460.000221879                1011.8       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:462.618548927               1011.77       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:465.7605413847              1011.74       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:469.5309323339               1011.7       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:474.0554014729              1011.65       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:479.4847644398              1011.59       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:48.85170804141              1013.34       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:486.0                       1011.53       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:487.8788920947              1011.51       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:490.1335626083              1011.48       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:492.8391672246              1011.46       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:496.0858927642              1011.42       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:499.9819634117              1011.38       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:5.133562608273              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:504.6572481887              1011.34       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:510.2675899211              1011.28       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:517.0                       1011.22       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:518.8182826723               1011.2       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:521.000221879               1011.18       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:523.618548927               1011.16       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:526.7605413847              1011.13       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:53.91911347713              1013.34       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:530.5309323339              1011.09       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:535.0554014729              1011.05       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:540.4847644398              1011.01       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:547.0                       1010.95       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:548.8788920947              1010.94       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:551.1335626083              1010.92       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:553.8391672246              1010.89       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:557.0858927642              1010.87       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:560.9819634117              1010.84       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:565.6572481887               1010.8       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:571.2675899211              1010.76       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:578.0                       1010.71       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:579.8788920947              1010.69       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:582.1335626083              1010.67       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:584.8391672246              1010.65       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:588.0858927642              1010.63       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:591.9819634117               1010.6       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:596.6572481887              1010.57       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:60.0                        1013.35       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:602.2675899211              1010.53       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:609.0                       1010.49       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:61.87889209467              1013.35       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:610.8182826723              1010.48       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:613.000221879               1010.46       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:615.618548927               1010.44       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:618.7605413847              1010.42       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:622.5309323339               1010.4       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:627.0554014729              1010.37       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:632.4847644398              1010.34       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:639.0                        1010.3       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:64.13356260827              1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:640.8788920947              1010.29       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:643.1335626083              1010.27       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:645.8391672246              1010.26       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:649.0858927642              1010.24       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:652.9819634117              1010.22       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:657.6572481887              1010.19       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:66.8391672246               1013.36       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:663.2675899211              1010.16       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:670.0                       1010.12       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:671.8182826723              1010.11       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:674.000221879                1010.1       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:676.618548927               1010.09       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:679.7605413847              1010.07       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:683.5309323339              1010.05       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:688.0554014729              1010.03       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:693.4847644398                 1010       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:7.839167224597              1013.32       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:70.08589276419              1013.37       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:700.0                       1009.97       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:701.8788920947              1009.96       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:704.1335626083              1009.95       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:706.8391672246              1009.94       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:710.0858927642              1009.92       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:713.9819634117              1009.91       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:718.6572481887              1009.89       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:724.2675899211              1009.86       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:73.98196341169              1013.37       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:731.0                       1009.83       hds001_004_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:78.6572481887               1013.38       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:84.26758992111              1013.39       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:91.0                         1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:92.81828267226               1013.4       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:95.00022187897              1013.41       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_004_004_time:97.61854892703              1013.41       hds001_004_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:1.0                         1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:100.7605413847              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:104.5309323339              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:109.0554014729              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:11.08589276419              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:114.4847644398              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:121.0                       1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:122.8788920947              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:125.1335626083              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:127.8391672246              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:131.0858927642              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:134.9819634117              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:139.6572481887              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:14.98196341169              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:145.2675899211              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:152.0                       1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:153.8182826723              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:156.000221879               1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:158.618548927               1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:161.7605413847              1018.93       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:165.5309323339              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:170.0554014729              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:175.4847644398              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:182.0                       1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:183.8788920947              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:186.1335626083              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:188.8391672246              1018.92       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:19.6572481887               1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:192.0858927642              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:195.9819634117              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:2.878892094669              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:200.6572481887              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:206.2675899211              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:213.0                        1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:214.8788920947               1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:217.1335626083               1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:219.8391672246               1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:223.0858927642               1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:226.9819634117               1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:231.6572481887              1018.89       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:237.2675899211              1018.89       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:244.0                       1018.89       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:245.8182826723              1018.89       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:248.000221879               1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:25.26758992111              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:250.618548927               1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:253.7605413847              1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:257.5309323339              1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:262.0554014729              1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:267.4847644398              1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:274.0                       1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:275.8788920947              1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:278.1335626083              1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:280.8391672246              1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:284.0858927642              1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:287.9819634117              1018.86       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:292.6572481887              1018.86       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:298.2675899211              1018.86       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:305.0                       1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:306.8182826723              1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:309.000221879               1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:311.618548927               1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:314.7605413847              1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:318.5309323339              1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:32.0                        1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:323.0554014729              1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:328.4847644398              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:33.69706382744              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:335.0                       1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:336.8788920947              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:339.1335626083              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:341.8391672246              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:345.0858927642              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:348.9819634117              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:35.73354042038              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:353.6572481887              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:359.2675899211              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:366.0                       1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:367.8788920947              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:370.1335626083              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:372.8391672246              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:376.0858927642              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:379.9819634117              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:38.17731233189              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:384.6572481887              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:390.2675899211              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:397.0                       1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:398.6970638274              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:400.7335404204              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:403.1773123319              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:406.1098386257              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:409.6288701783              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:41.10983862572              1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:413.8517080414              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:418.9191134771              1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:425.0                       1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:426.8788920947              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:429.1335626083              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:431.8391672246              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:435.0858927642              1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:438.9819634117              1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:44.6288701783               1018.84       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:443.6572481887              1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:449.2675899211              1018.89       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:456.0                        1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:457.8182826723               1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:460.000221879                1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:462.618548927               1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:465.7605413847              1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:469.5309323339              1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:474.0554014729              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:479.4847644398              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:48.85170804141              1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:486.0                       1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:487.8788920947              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:490.1335626083              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:492.8391672246              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:496.0858927642              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:499.9819634117              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:5.133562608273              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:504.6572481887              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:510.2675899211              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:517.0                       1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:518.8182826723              1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:521.000221879               1018.93       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:523.618548927               1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:526.7605413847              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:53.91911347713              1018.85       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:530.5309323339              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:535.0554014729              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:540.4847644398              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:547.0                       1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:548.8788920947              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:551.1335626083              1018.92       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:553.8391672246              1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:557.0858927642              1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:560.9819634117              1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:565.6572481887              1018.91       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:571.2675899211               1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:578.0                        1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:579.8788920947               1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:582.1335626083               1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:584.8391672246               1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:588.0858927642               1018.9       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:591.9819634117              1018.89       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:596.6572481887              1018.89       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:60.0                        1018.86       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:602.2675899211              1018.89       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:609.0                       1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:61.87889209467              1018.86       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:610.8182826723              1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:613.000221879               1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:615.618548927               1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:618.7605413847              1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:622.5309323339              1018.88       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:627.0554014729              1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:632.4847644398              1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:639.0                       1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:64.13356260827              1018.86       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:640.8788920947              1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:643.1335626083              1018.87       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:645.8391672246              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:649.0858927642              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:652.9819634117              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:657.6572481887              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:66.8391672246               1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:663.2675899211              1018.86       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:670.0                       1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:671.8182826723              1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:674.000221879               1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:676.618548927               1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:679.7605413847              1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:683.5309323339              1018.85       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:688.0554014729              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:693.4847644398              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:7.839167224597              1018.83       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:70.08589276419              1018.87       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:700.0                       1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:701.8788920947              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:704.1335626083              1018.84       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:706.8391672246              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:710.0858927642              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:713.9819634117              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:718.6572481887              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:724.2675899211              1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:73.98196341169              1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:731.0                       1018.83       hds001_010_004                   0
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:78.6572481887               1018.88       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:84.26758992111              1018.89       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:91.0                         1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:92.81828267226               1018.9       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:95.00022187897              1018.91       hds001_010_004                   1
-oname:hds.csv_otype:lst_usecol:hds001_010_004_time:97.61854892703              1018.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:1.0                         1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:100.7605413847              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:104.5309323339              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:109.0554014729              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:11.08589276419              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:114.4847644398              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:121.0                       1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:122.8788920947              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:125.1335626083              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:127.8391672246              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:131.0858927642              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:134.9819634117              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:139.6572481887              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:14.98196341169              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:145.2675899211              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:152.0                       1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:153.8182826723              1007.53       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:156.000221879               1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:158.618548927               1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:161.7605413847              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:165.5309323339              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:170.0554014729              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:175.4847644398              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:182.0                       1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:183.8788920947              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:186.1335626083              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:188.8391672246              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:19.6572481887               1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:192.0858927642              1007.52       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:195.9819634117              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:2.878892094669              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:200.6572481887              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:206.2675899211              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:213.0                       1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:214.8788920947              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:217.1335626083              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:219.8391672246              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:223.0858927642               1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:226.9819634117               1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:231.6572481887               1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:237.2675899211               1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:244.0                        1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:245.8182826723               1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:248.000221879                1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:25.26758992111              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:250.618548927               1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:253.7605413847              1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:257.5309323339              1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:262.0554014729              1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:267.4847644398              1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:274.0                       1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:275.8788920947              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:278.1335626083              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:280.8391672246              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:284.0858927642              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:287.9819634117              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:292.6572481887              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:298.2675899211              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:305.0                       1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:306.8182826723              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:309.000221879               1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:311.618548927               1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:314.7605413847              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:318.5309323339              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:32.0                        1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:323.0554014729              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:328.4847644398              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:33.69706382744              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:335.0                       1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:336.8788920947              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:339.1335626083              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:341.8391672246              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:345.0858927642              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:348.9819634117              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:35.73354042038              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:353.6572481887              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:359.2675899211              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:366.0                       1007.46       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:367.8788920947               1007.4       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:370.1335626083              1007.34       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:372.8391672246              1007.27       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:376.0858927642              1007.18       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:379.9819634117              1007.08       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:38.17731233189              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:384.6572481887              1006.97       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:390.2675899211              1006.83       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:397.0                       1006.68       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:398.6970638274              1006.64       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:400.7335404204               1006.6       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:403.1773123319              1006.54       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:406.1098386257              1006.48       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:409.6288701783              1006.41       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:41.10983862572              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:413.8517080414              1006.33       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:418.9191134771              1006.23       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:425.0                       1006.11       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:426.8788920947              1006.08       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:429.1335626083              1006.04       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:431.8391672246              1005.99       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:435.0858927642              1005.94       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:438.9819634117              1005.87       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:44.6288701783               1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:443.6572481887               1005.8       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:449.2675899211              1005.71       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:456.0                       1005.61       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:457.8182826723              1005.58       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:460.000221879               1005.55       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:462.618548927               1005.51       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:465.7605413847              1005.46       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:469.5309323339              1005.41       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:474.0554014729              1005.35       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:479.4847644398              1005.27       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:48.85170804141              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:486.0                       1005.19       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:487.8788920947              1005.16       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:490.1335626083              1005.13       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:492.8391672246               1005.1       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:496.0858927642              1005.06       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:499.9819634117              1005.01       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:5.133562608273              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:504.6572481887              1004.95       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:510.2675899211              1004.88       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:517.0                        1004.8       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:518.8182826723              1004.78       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:521.000221879               1004.76       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:523.618548927               1004.73       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:526.7605413847              1004.69       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:53.91911347713              1007.47       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:530.5309323339              1004.65       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:535.0554014729               1004.6       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:540.4847644398              1004.54       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:547.0                       1004.47       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:548.8788920947              1004.45       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:551.1335626083              1004.43       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:553.8391672246               1004.4       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:557.0858927642              1004.37       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:560.9819634117              1004.33       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:565.6572481887              1004.29       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:571.2675899211              1004.24       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:578.0                       1004.17       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:579.8788920947              1004.16       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:582.1335626083              1004.14       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:584.8391672246              1004.11       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:588.0858927642              1004.08       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:591.9819634117              1004.05       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:596.6572481887              1004.01       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:60.0                        1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:602.2675899211              1003.96       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:609.0                       1003.91       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:61.87889209467              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:610.8182826723              1003.89       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:613.000221879               1003.88       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:615.618548927               1003.86       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:618.7605413847              1003.83       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:622.5309323339               1003.8       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:627.0554014729              1003.77       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:632.4847644398              1003.73       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:639.0                       1003.68       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:64.13356260827              1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:640.8788920947              1003.67       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:643.1335626083              1003.65       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:645.8391672246              1003.63       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:649.0858927642              1003.61       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:652.9819634117              1003.58       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:657.6572481887              1003.55       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:66.8391672246               1007.48       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:663.2675899211              1003.51       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:670.0                       1003.47       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:671.8182826723              1003.46       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:674.000221879               1003.44       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:676.618548927               1003.43       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:679.7605413847              1003.41       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:683.5309323339              1003.38       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:688.0554014729              1003.36       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:693.4847644398              1003.32       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:7.839167224597              1007.46       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:70.08589276419              1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:700.0                       1003.28       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:701.8788920947              1003.27       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:704.1335626083              1003.26       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:706.8391672246              1003.25       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:710.0858927642              1003.23       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:713.9819634117              1003.21       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:718.6572481887              1003.18       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:724.2675899211              1003.15       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:73.98196341169              1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:731.0                       1003.12       hds001_004_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:78.6572481887               1007.49       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:84.26758992111               1007.5       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:91.0                        1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:92.81828267226              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:95.00022187897              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_004_004_time:97.61854892703              1007.51       hds001_004_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:1.0                         1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:100.7605413847              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:104.5309323339              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:109.0554014729              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:11.08589276419              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:114.4847644398              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:121.0                       1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:122.8788920947              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:125.1335626083              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:127.8391672246              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:131.0858927642              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:134.9819634117              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:139.6572481887              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:14.98196341169              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:145.2675899211              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:152.0                       1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:153.8182826723              1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:156.000221879               1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:158.618548927               1010.93       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:161.7605413847              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:165.5309323339              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:170.0554014729              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:175.4847644398              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:182.0                       1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:183.8788920947              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:186.1335626083              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:188.8391672246              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:19.6572481887               1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:192.0858927642              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:195.9819634117              1010.92       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:2.878892094669              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:200.6572481887              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:206.2675899211              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:213.0                       1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:214.8788920947              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:217.1335626083              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:219.8391672246              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:223.0858927642              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:226.9819634117              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:231.6572481887               1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:237.2675899211               1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:244.0                        1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:245.8182826723               1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:248.000221879                1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:25.26758992111              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:250.618548927                1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:253.7605413847               1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:257.5309323339               1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:262.0554014729              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:267.4847644398              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:274.0                       1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:275.8788920947              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:278.1335626083              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:280.8391672246              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:284.0858927642              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:287.9819634117              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:292.6572481887              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:298.2675899211              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:305.0                       1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:306.8182826723              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:309.000221879               1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:311.618548927               1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:314.7605413847              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:318.5309323339              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:32.0                        1010.86       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:323.0554014729              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:328.4847644398              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:33.69706382744              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:335.0                       1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:336.8788920947              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:339.1335626083              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:341.8391672246              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:345.0858927642              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:348.9819634117              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:35.73354042038              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:353.6572481887              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:359.2675899211              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:366.0                       1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:367.8788920947              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:370.1335626083              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:372.8391672246              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:376.0858927642              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:379.9819634117              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:38.17731233189              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:384.6572481887              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:390.2675899211              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:397.0                       1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:398.6970638274              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:400.7335404204              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:403.1773123319              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:406.1098386257              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:409.6288701783              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:41.10983862572              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:413.8517080414              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:418.9191134771              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:425.0                       1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:426.8788920947              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:429.1335626083              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:431.8391672246              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:435.0858927642              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:438.9819634117              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:44.6288701783               1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:443.6572481887               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:449.2675899211               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:456.0                       1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:457.8182826723              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:460.000221879               1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:462.618548927               1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:465.7605413847              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:469.5309323339              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:474.0554014729              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:479.4847644398              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:48.85170804141              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:486.0                       1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:487.8788920947              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:490.1335626083              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:492.8391672246              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:496.0858927642              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:499.9819634117              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:5.133562608273              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:504.6572481887              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:510.2675899211              1010.93       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:517.0                       1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:518.8182826723              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:521.000221879               1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:523.618548927               1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:526.7605413847              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:53.91911347713              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:530.5309323339              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:535.0554014729              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:540.4847644398              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:547.0                       1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:548.8788920947              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:551.1335626083              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:553.8391672246              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:557.0858927642              1010.92       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:560.9819634117              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:565.6572481887              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:571.2675899211              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:578.0                       1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:579.8788920947              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:582.1335626083              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:584.8391672246              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:588.0858927642              1010.91       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:591.9819634117               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:596.6572481887               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:60.0                        1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:602.2675899211               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:609.0                        1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:61.87889209467              1010.88       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:610.8182826723               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:613.000221879                1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:615.618548927                1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:618.7605413847               1010.9       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:622.5309323339              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:627.0554014729              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:632.4847644398              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:639.0                       1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:64.13356260827              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:640.8788920947              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:643.1335626083              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:645.8391672246              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:649.0858927642              1010.89       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:652.9819634117              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:657.6572481887              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:66.8391672246               1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:663.2675899211              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:670.0                       1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:671.8182826723              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:674.000221879               1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:676.618548927               1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:679.7605413847              1010.88       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:683.5309323339              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:688.0554014729              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:693.4847644398              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:7.839167224597              1010.87       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:70.08589276419              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:700.0                       1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:701.8788920947              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:704.1335626083              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:706.8391672246              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:710.0858927642              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:713.9819634117              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:718.6572481887              1010.87       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:724.2675899211              1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:73.98196341169              1010.89       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:731.0                       1010.86       hds001_010_004                   0
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:78.6572481887                1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:84.26758992111               1010.9       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:91.0                        1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:92.81828267226              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:95.00022187897              1010.91       hds001_010_004                   1
+oname:hds.csv_otype:lst_usecol:hds001_010_004_time:97.61854892703              1010.91       hds001_010_004                   1
 
 
 
@@ -1158,8 +1158,8 @@ checking for denormal values in obs + noise ensemble
 
   ---  pre-drop initial phi summary  ---  
        phi type           mean            std            min            max
-       measured         3299.4        4338.14              0        25616.4
-         actual        3108.54        4333.45              0        24952.5
+       measured        1379.13        1730.19              0        9797.23
+         actual        1188.83        1727.52              0        9353.73
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1169,8 +1169,8 @@ checking for denormal values in obs + noise ensemble
 
   ---  initial phi summary  ---  
        phi type           mean            std            min            max
-       measured         3299.4        4338.14              0        25616.4
-         actual        3108.54        4333.45              0        24952.5
+       measured        1379.13        1730.19              0        9797.23
+         actual        1188.83        1727.52              0        9353.73
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1198,13 +1198,13 @@ see .log file for more details
 ...subset idx:oe real name:  41:41, 53:53, 68:68, 199:BASE, 
 
   ---  evaluting upgrade ensembles  ---  
-...last mean:  3299.4
-...last stdev:  4338.14
+...last mean:  1379.13
+...last stdev:  1730.19
 
   ---  phi summary for lambda, scale fac:0.1 , 0.75 ,   ---  
        phi type           mean            std            min            max
-       measured        221.965        153.692              0        327.485
-         actual        102.924        74.9968              0        176.152
+       measured        162.254        109.844              0        231.247
+         actual        36.4993        27.1577              0        65.7193
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1213,8 +1213,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:0.1 , 1 ,   ---  
        phi type           mean            std            min            max
-       measured        205.242        158.603              0        371.921
-         actual        64.8156        91.1547              0        194.319
+       measured        168.877        122.282              0        285.858
+         actual        31.9026        50.0444              0        105.838
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1223,8 +1223,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:0.1 , 1.1 ,   ---  
        phi type           mean            std            min            max
-       measured        355.858        313.953              0        720.233
-         actual        207.218        254.011              0        548.858
+       measured        230.533        188.033              0        444.561
+         actual         89.244        125.282              0        268.538
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1233,8 +1233,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:1 , 0.75 ,   ---  
        phi type           mean            std            min            max
-       measured        222.089         153.78              0        327.951
-         actual        103.044        75.0109              0        176.008
+       measured        162.582        110.071              0        231.716
+         actual        36.7746        27.4123              0        66.3673
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1243,8 +1243,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:1 , 1 ,   ---  
        phi type           mean            std            min            max
-       measured         205.15        158.488              0        371.555
-         actual        64.7184        90.9788              0        193.938
+       measured        168.483         121.85              0        284.706
+         actual        31.4403        49.5622              0        104.657
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1253,8 +1253,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:1 , 1.1 ,   ---  
        phi type           mean            std            min            max
-       measured        355.664        313.703              0        719.466
-         actual        207.018        253.695              0        548.074
+       measured        229.824        187.257              0         442.78
+         actual         88.461         124.56              0        266.729
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1263,8 +1263,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:10 , 0.75 ,   ---  
        phi type           mean            std            min            max
-       measured        225.247        156.328              0        335.223
-         actual        106.328        77.3073              0        180.049
+       measured        166.105        112.573              0        237.425
+         actual        40.0907        30.1228              0        72.8838
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1273,8 +1273,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:10 , 1 ,   ---  
        phi type           mean            std            min            max
-       measured        202.228        155.534              0        364.698
-         actual        61.9539        87.7026              0        186.861
+       measured        165.053        117.983              0        274.353
+         actual        27.7368        44.8144              0        93.9994
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1283,40 +1283,40 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:10 , 1.1 ,   ---  
        phi type           mean            std            min            max
-       measured        349.831        307.657              0        705.949
-         actual        201.355         247.42              0        534.324
+       measured        223.187         179.63              0        425.435
+         actual        81.5254        116.873              0        249.066
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
 
 
 
-  ---  phi summary for best lambda, scale fac: 10 , 1 ,   ---  
+  ---  phi summary for best lambda, scale fac: 0.1 , 0.75 ,   ---  
        phi type           mean            std            min            max
-       measured        202.228        155.534              0        364.698
-         actual        61.9539        87.7026              0        186.861
+       measured        162.254        109.844              0        231.247
+         actual        36.4993        27.1577              0        65.7193
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
 
 
 
-  ---  running remaining realizations for best lambda, scale:10 , 1 ,   ---  
-...phi summary for entire ensemble using lambda,scale_fac 10 , 1 , 
+  ---  running remaining realizations for best lambda, scale:0.1 , 0.75 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.1 , 0.75 , 
        phi type           mean            std            min            max
-       measured        268.865        174.864              0        1342.57
-         actual        82.5113         174.06              0        1134.35
+       measured        278.281        190.101              0        1533.64
+         actual         90.739        189.567              0        1325.21
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
 
 
-...last best mean phi * acceptable phi factor:  3464.37
-...current best mean phi:  268.865
+...last best mean phi * acceptable phi factor:  1448.09
+...current best mean phi:  278.281
 
   ---  updating parameter ensemble  ---  
 
-  ---  updating lambda to  7.5  ---  
+  ---  updating lambda to  0.075  ---  
 
   ---  EnsembleMethod iteration 1 report  ---  
    number of active realizations:  200
@@ -1324,8 +1324,8 @@ see .log file for more details
       current obs ensemble saved to mumodel.1.obs.csv
       current par ensemble saved to mumodel.1.par.csv
        phi type           mean            std            min            max
-       measured        268.865        174.864              0        1342.57
-         actual        82.5113         174.06              0        1134.35
+       measured        278.281        190.101              0        1533.64
+         actual         90.739        189.567              0        1325.21
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1335,14 +1335,14 @@ see .log file for more details
    ---  Parameter Group Change Summmary  ---    
    (compared to the initial ensemble using active realizations)
 group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
-npf_cn              1681.99     42.2917               0               0   2.3e+03        85         1
-rch_pp              2.8e+02         1.1               2               0   2.1e+03     5e+02         1
-sto_gr              1.2e+02        0.62              40               0   2.2e+03   1.8e+03         9
-sto_pp                   86        0.76               1               0   1.5e+03   1.1e+03         2
-rch_cn                   72          10               0               0     2e+02     1e+02         0
-npf_pp                   69         8.1               0               0   3.2e+02   2.2e+03         0
-npf_gr                   47        0.75              38               0     1e+03   8.9e+02         5
-sto_cn                    2       0.079               0               0   1.3e+02   1.2e+02         0
+npf_cn              1333.35      38.598               0               0   2.3e+03   1.2e+02         1
+sto_gr                1e+02        0.47              42               0   2.2e+03   1.2e+03         6
+npf_pp                   94         7.9               0               0   3.9e+02   6.9e+02         1
+sto_pp                   92        0.76               2               0     2e+03   9.5e+02         2
+rch_cn                   62         9.5               0               0     2e+02   1.1e+02         0
+rch_pp                   36           1               1               0     5e+02   5.5e+02         0
+npf_gr                   34        0.57              36               0     1e+03   1.2e+03         3
+sto_cn                 0.71        0.14               0               0   1.3e+02   1.3e+02         0
     Note: parameter change summary sorted according to abs 'mean change'.
           'n CV decr' is the number of parameters with current CV less 30% of the initial CV
 
@@ -1352,37 +1352,97 @@ sto_cn                    2       0.079               0               0   1.3e+0
 ...phiredstp:  0.01
 ...nphistp:  3
 ...nphinored (also used for consecutive bad lambda cycles):  3
-...best mean phi sequence: 3299.4 , 268.865 , 
-...best phi yet:  268.865
+...best mean phi sequence: 1379.13 , 278.281 , 
+...best phi yet:  278.281
 ...number of consecutive bad lambda testing cycles:  0
 ...number of iterations satisfying phiredstp criteria:  1
 ...number of iterations since best yet mean phi:  0
 
   ---  starting solve for iteration: 2  ---  
-...current lambda:  7.5
+...current lambda:  0.075
 ...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.0075
+see .log file for more details
+...finished calcs for: 0.0075
+...starting calcs for glm factor 0.075
+see .log file for more details
+...finished calcs for: 0.075
 ...starting calcs for glm factor 0.75
 see .log file for more details
 ...finished calcs for: 0.75
-...starting calcs for glm factor 7.5
-see .log file for more details
-...finished calcs for: 7.5
-...starting calcs for glm factor 75
-see .log file for more details
-...finished calcs for: 75
 
   ---  running upgrade ensembles  ---  
 ...subset idx:pe real name:  3:BASE, 50:47, 65:63, 118:117, 
 ...subset idx:oe real name:  3:BASE, 50:47, 65:63, 118:117, 
 
   ---  evaluting upgrade ensembles  ---  
-...last mean:  268.865
-...last stdev:  174.864
+...last mean:  278.281
+...last stdev:  190.101
+
+  ---  phi summary for lambda, scale fac:0.0075 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        146.221        98.1605              0        205.563
+         actual        1.78704        2.03847              0        4.35678
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.0075 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.546        96.9515              0        204.252
+         actual       0.393927       0.416846              0       0.759033
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.0075 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.772        97.1098              0        204.133
+         actual       0.732986       0.630838              0        1.43146
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.075 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        146.247        98.1788              0        205.609
+         actual        1.80755        2.05507              0        4.38426
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.075 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.564        96.9637              0        204.294
+         actual       0.403639        0.42939              0       0.798708
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.075 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.783        97.1176              0        204.171
+         actual       0.735694       0.615014              0        1.41213
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
 
   ---  phi summary for lambda, scale fac:0.75 , 0.75 ,   ---  
        phi type           mean            std            min            max
-       measured         146.46        98.1174              0        206.213
-         actual        1.46675        1.28226              0         3.0983
+       measured         146.49         98.349              0        206.021
+         actual        2.00439        2.21881              0        4.66372
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1391,8 +1451,8 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:0.75 , 1 ,   ---  
        phi type           mean            std            min            max
-       measured        144.992        97.2138              0        204.853
-         actual        0.48566       0.698173              0        1.48562
+       measured        144.736        97.0856              0        204.702
+         actual       0.513688       0.597436              0        1.27029
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1401,100 +1461,40 @@ see .log file for more details
 
   ---  phi summary for lambda, scale fac:0.75 , 1.1 ,   ---  
        phi type           mean            std            min            max
-       measured        144.747        97.0694              0        204.481
-         actual       0.436261        0.43178              0        1.01138
+       measured        144.904        97.2033              0        204.556
+         actual       0.787759       0.544229              0        1.25177
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
 
 
 
-  ---  phi summary for lambda, scale fac:7.5 , 0.75 ,   ---  
+  ---  phi summary for best lambda, scale fac: 0.0075 , 1 ,   ---  
        phi type           mean            std            min            max
-       measured        149.044        99.7299              0        209.408
-         actual        3.70576        3.11232              0        6.55383
+       measured        144.546        96.9515              0        204.252
+         actual       0.393927       0.416846              0       0.759033
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
 
 
 
-  ---  phi summary for lambda, scale fac:7.5 , 1 ,   ---  
+  ---  running remaining realizations for best lambda, scale:0.0075 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.0075 , 1 , 
        phi type           mean            std            min            max
-       measured        147.549        98.7991              0         208.34
-         actual        2.58327        2.75235              0        5.32023
+       measured        189.777        22.9541              0        248.882
+         actual        2.73237        2.95796              0        16.9181
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
 
 
-
-  ---  phi summary for lambda, scale fac:7.5 , 1.1 ,   ---  
-       phi type           mean            std            min            max
-       measured        147.168        98.5632              0        207.973
-         actual        2.35093        2.59067              0        4.88718
-     note: 'measured' phi reported above includes 
-           realizations of measurement noise, 
-           'actual' phi does not.
-
-
-
-  ---  phi summary for lambda, scale fac:75 , 0.75 ,   ---  
-       phi type           mean            std            min            max
-       measured        153.767         102.72              0        212.613
-         actual        7.78417        5.29853              0        11.8142
-     note: 'measured' phi reported above includes 
-           realizations of measurement noise, 
-           'actual' phi does not.
-
-
-
-  ---  phi summary for lambda, scale fac:75 , 1 ,   ---  
-       phi type           mean            std            min            max
-       measured        152.639            102              0        212.251
-         actual        6.81125        4.85141              0        10.8287
-     note: 'measured' phi reported above includes 
-           realizations of measurement noise, 
-           'actual' phi does not.
-
-
-
-  ---  phi summary for lambda, scale fac:75 , 1.1 ,   ---  
-       phi type           mean            std            min            max
-       measured        152.232        101.742              0        212.115
-         actual        6.46647        4.74271              0        10.4873
-     note: 'measured' phi reported above includes 
-           realizations of measurement noise, 
-           'actual' phi does not.
-
-
-
-  ---  phi summary for best lambda, scale fac: 0.75 , 1.1 ,   ---  
-       phi type           mean            std            min            max
-       measured        144.747        97.0694              0        204.481
-         actual       0.436261        0.43178              0        1.01138
-     note: 'measured' phi reported above includes 
-           realizations of measurement noise, 
-           'actual' phi does not.
-
-
-
-  ---  running remaining realizations for best lambda, scale:0.75 , 1.1 ,   ---  
-...phi summary for entire ensemble using lambda,scale_fac 0.75 , 1.1 , 
-       phi type           mean            std            min            max
-       measured        189.875        23.0048              0        248.203
-         actual        2.72579        2.98244              0        17.9477
-     note: 'measured' phi reported above includes 
-           realizations of measurement noise, 
-           'actual' phi does not.
-
-
-...last best mean phi * acceptable phi factor:  282.308
-...current best mean phi:  189.875
+...last best mean phi * acceptable phi factor:  292.195
+...current best mean phi:  189.777
 
   ---  updating parameter ensemble  ---  
 
-  ---  updating lambda to  0.5625  ---  
+  ---  updating lambda to  0.005625  ---  
 
   ---  EnsembleMethod iteration 2 report  ---  
    number of active realizations:  200
@@ -1502,8 +1502,8 @@ see .log file for more details
       current obs ensemble saved to mumodel.2.obs.csv
       current par ensemble saved to mumodel.2.par.csv
        phi type           mean            std            min            max
-       measured        189.875        23.0048              0        248.203
-         actual        2.72579        2.98244              0        17.9477
+       measured        189.777        22.9541              0        248.882
+         actual        2.73237        2.95796              0        16.9181
      note: 'measured' phi reported above includes 
            realizations of measurement noise, 
            'actual' phi does not.
@@ -1513,14 +1513,14 @@ see .log file for more details
    ---  Parameter Group Change Summmary  ---    
    (compared to the initial ensemble using active realizations)
 group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
-rch_pp              1153.38     1.43301               2               0   2.1e+03   4.7e+02         1
-sto_pp              1.1e+03         1.7               0               0   1.5e+03   3.1e+02         7
-sto_gr              7.4e+02        0.89              34               0   2.2e+03   8.1e+02        32
-npf_gr              4.5e+02           1              24               0     1e+03     1e+03        26
-npf_cn              2.2e+02          44               0               0   2.3e+03     4e+02         1
-npf_pp                   87         8.6               0               0   3.2e+02   6.8e+02         0
-rch_cn                   40          11               0               0     2e+02   1.3e+02         0
-sto_cn                   26        0.25               0               0   1.3e+02   1.7e+02         0
+npf_cn               361.43     44.1119               0               0   2.3e+03     5e+02         1
+sto_pp              3.1e+02           1               1               0     2e+03   5.7e+03         2
+sto_gr              1.1e+02        0.58              36               0   2.2e+03   1.7e+03         8
+npf_gr              1.1e+02        0.67              36               0     1e+03   1.2e+03         5
+npf_pp                   80         8.9               0               0   3.9e+02   5.2e+02         1
+rch_pp                   44         1.1               1               0     5e+02   4.8e+02         0
+rch_cn                   23          10               0               0     2e+02   1.5e+02         0
+sto_cn                   10         0.3               0               0   1.3e+02   1.4e+02         0
     Note: parameter change summary sorted according to abs 'mean change'.
           'n CV decr' is the number of parameters with current CV less 30% of the initial CV
 
@@ -1530,14 +1530,14 @@ sto_cn                   26        0.25               0               0   1.3e+0
 ...phiredstp:  0.01
 ...nphistp:  3
 ...nphinored (also used for consecutive bad lambda cycles):  3
-...best mean phi sequence: 3299.4 , 268.865 , 189.875 , 
-...best phi yet:  189.875
+...best mean phi sequence: 1379.13 , 278.281 , 189.777 , 
+...best phi yet:  189.777
 ...number of consecutive bad lambda testing cycles:  0
 ...number of iterations satisfying phiredstp criteria:  1
 ...number of iterations since best yet mean phi:  0
 
 
 pestpp-ies analysis complete...
-started at 03/30/24 16:10:33
-finished at 03/30/24 16:19:52
-took 9.31667 minutes
+started at 04/04/24 10:02:54
+finished at 04/04/24 10:06:13
+took 3.31667 minutes
